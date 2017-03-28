@@ -1,9 +1,9 @@
-# python
+# python  
 for learning python here
 
-echo "# python" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin https://github.com/connonfodder/python.git
-git push -u origin master
+echo "# python" >> README.md  
+git init  
+git add README.md  
+git commit -m "first commit"  
+git remote add origin https://github.com/connonfodder/python.git  
+git push -u origin master  
