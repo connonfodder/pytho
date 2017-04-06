@@ -15,4 +15,5 @@ git push -u origin master
 
 ＃以后再提交  
 git add .  
+git commit -m "xxx"  
 git push -u origin master  
