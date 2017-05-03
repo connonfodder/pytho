@@ -775,3 +775,555 @@ print(int('10010', **kw))
 args = (10, 5, 6, 7)
 print(max(*args))
 
+
+#------------------高级面向对象-----------------------------------#
+# __slots__ 的使用 
+import traceback
+
+from types import MethodType
+
+class MyClass(object):
+    __slots__ = ['name', 'set_name']
+
+def set_name(self, name):
+    self.name = name
+
+cls = MyClass()
+cls.name = 'Tom'
+cls.set_name = MethodType(set_name, cls)   #动态添加方法
+cls.set_name('Jerry')
+print(cls.name)
+try:
+    cls.age = 30
+except AttributeError:
+    traceback.print_exc()
+
+class ExtMyClass(MyClass):
+    pass
+
+ext_cls = ExtMyClass()
+ext_cls.age = 30
+print(ext_cls.age)
+
+
+# property的get/set使用, 只读
+import traceback
+class Student:
+    @property
+    def score(self):     # 创建了一个score对象 
+        return self._score
+    
+    @score.setter
+    def score(self, value):   # score对象的setter方法
+        if not isinstance(value, int):
+            raise ValueError('not int')
+        elif (value < 0 ) or (value > 100):
+            raise ValueError('not between 0 ~ 100')
+            
+        self._score = value
+    @property
+    def double_score(self):    # 只读属性  
+        return self._score * 2
+
+s = Student()
+s.score = 75    # 注意看调用的方法属性名称  是s.score 不是 s._score
+print(s.score)
+try:
+    s.score = 'abc'
+except ValueError:
+    traceback.print_exc()
+
+try:
+    s.score = 123
+except ValueError:
+    traceback.print_exc()
+
+print(s.double_score)
+
+try:
+    s.double_score = 150
+except AttributeError:
+    traceback.print_exc()
+
+# 描述器
+'''
+实现了__set__ __get__ __del__方法的类称为描述器
+python是门动态语言，类的生成都是在编译的时候
+'''
+class MyProperty:
+    def __init__(self, fget=None, fset=None, fdel=None):
+        self.fget = fget
+        self.fset = fset
+        self.fdel = fdel
+        
+    def __get__(self, instance, cls):
+        print('__get__')
+        if self.fget:
+            return self.fget(instance)
+            
+    def __set__(self, instance, value):
+        print('__set__', value)
+        if self.fset:
+            return self.fset(instance, value)
+            
+    def __del__(self, instance):
+        print('__del__')
+        if self.fdel:
+            return self.fdel(instance)
+            
+    def getter(self, fn):
+        print('getter')
+        self.fget = fn
+        
+    def setter(self,fn):
+        print('setter')
+        self.fset = fn
+        
+    def delete(self, fn):
+        self.fdel = fn
+
+class Student:
+    @MyProperty   # 生成MyProperty类
+    def score(self):
+        return self._score
+    @score.setter  # 所以会调用MyProperty.setter()
+    def set_score(self, value):
+        self._score = value
+        
+s = Student()
+s.score = 21   # 调用的是__set__ 方法
+print(s.score) # 调用的是__get__ 方法
+
+# 控制类的魔术(内部)函数
+'''
+ 类似于java中的Object的
+ toString  ->  __str__
+ __iter__ __next__ -> 迭代器内部函数
+ 支持下标访问
+ __name__ 就是函数名称
+ call 重载()函数
+'''
+class Fib100:
+    def __init__(self):
+        self._1 , self._2 = 0, 1
+    def __iter__(self):
+        return self
+    def __next__(self):
+        self._1, self._2 = self._2, self._1 + self._2
+        if self._1 > 100:
+            raise StopIteration()
+        return self._1
+    
+for i in Fib100():
+    print(i)
+
+
+class Fib:
+    def __getitem__(self, n):
+        a, b = 1, 1
+        for i in range(n):
+            a, b = b, a+b
+        return a
+    
+f = Fib()
+print(f[1])
+print(f[5])
+print(f[10])
+
+
+class Myclass:
+    
+    def __call__(self):
+        print('u can call cls() directly')
+        
+cls = Myclass()
+cls()  # 可调用的
+
+print(callable(cls))   
+print(callable(max))
+print(callable([1, 2, 3]))
+print(callable(None))
+print(callable('str'))
+
+
+# 枚举
+from enum import Enum
+
+Month = Enum('Month', ('Jan', 'Feb', 'Mar', 'Apr'))
+for name, member in Month.__members__.items():
+    print(name, '=>', member, ',', member.value)
+
+jan = Month.Jan
+print(jan)
+
+# 添加额外的方法和属性
+def add(self, value):
+    self.append(value)
+
+class ListMetaclass(type):  # 元类一定是从type继承下来的
+    def __new__(cls, name, bases, attrs):
+        # print(cls)
+        # print(name)
+        # print(bases)  基类
+        # print(type(attrs))
+        # attrs['add'] = lambda self, value: self.append(value)
+        attrs['add'] = add    # 添加额外的方法add
+        attrs['name'] = 'Tom' # 添加额外的属性
+        # attrs   就是一张hash表 可以额外添加属性和方法
+        return type.__new__(cls, name, bases, attrs)
+        
+class MyList(list, metaclass = ListMetaclass):  # 额外增加add方法，实际等价于append。
+    pass
+
+mli = MyList()
+mli.add(1)
+mli.add(2)
+mli.add(3)
+print(mli.name)
+print(mli)
+
+
+# orm框架
+class Field:
+    def __init__(self, name, col_type):
+        self.name = name
+        self.col_type = col_type
+    
+class IntegerField(Field):
+    def __init__(self, name):
+        super(IntegerField, self).__init__(name, 'integer')
+
+class StringField(Field):
+    def __init__(self, name):
+        super(StringField, self).__init__(name, 'varchar(1024)')
+
+class ModelMetaClass(type):  # 元类
+        def __new__(cls, name, bases, attrs):
+            if name=='Model':
+                return type.__new__(cls, name, bases, attrs)
+            print('Model name : %s' %name)
+            mappings = {}       # 新建一个字典来保存键值对 放入attrs哈希表中
+            for k, v in attrs.items():  # attrs.items()应该是自定义属性
+                if isinstance(v, Field):
+                    print('Field name: %s'%k)
+                    mappings[k] = v
+            for k in mappings.keys():
+                attrs.pop(k)  # 不需要了 扔掉
+            attrs['__mappings__'] = mappings
+            attrs['__table__'] = name
+            return type.__new__(cls, name, bases, attrs)
+        
+class Model(dict, metaclass = ModelMetaClass):
+    def __init__(self, **kvs):
+        super(Model, self).__init__(**kvs)
+        
+    def __getattr__(self, key):
+        try:
+            return self[key]
+        except KeyError:
+            raise AttributeError("'Model' object has no attribute '%s'." % key)
+            
+    def __setattr__(self, key, value):
+        self[key] = value
+    
+    def save(self):
+        fields = []
+        params = []
+        args = []
+        for k, v  in self.__mappings__.items():
+            fields.append(v.name)
+            params.append('?')
+            args.append(getattr(self, k, None))
+        sql = 'insert into %s(%s) values(%s)' % (self.__table__, ','.join(fields), ''.join(params))
+        print('sql:', sql)
+        print('args:', args)        
+        
+    
+class User(Model):
+    id = IntegerField('id')
+    name = StringField('name')
+                    
+    
+u = User()
+u.id = 10
+u.name='tom'
+u.save()
+
+# 异常
+import traceback
+
+try:
+    # r = 10 / 0
+except ZeroDivisionError as e:
+    print(e)
+    r = 1
+else:
+    print('没有异常')
+finally:
+    print('不管有没有异常都执行')
+print(r)
+
+# 单元测试和logging自行百度
+
+
+from threading import Thread
+import time
+def my_counter():
+    i = 0
+    for i in range(100000000):
+        i = i + 1
+    return True
+
+def main1():
+    thread_array = {}
+    start_time = time.time()
+    for tid in range(2):
+        t = Thread(target = my_counter)
+        t.start()
+        t.join()
+    end_time = time.time()
+    print('1 Total Time: {}'.format(end_time- start_time))  # 单线程65.8902
+
+def main2():
+    thread_array = {}
+    start_time = time.time()
+    for tid in range(2):
+        t = Thread(target = my_counter)
+        t.start()
+        thread_array[tid] = t
+    for i in range(2):
+        thread_array[i].join()
+    end_time = time.time()
+    print('2 Total Time: {}'.format(end_time- start_time))  # 并发线程34.899
+
+if __name__ == '__main__':
+    main1()
+    main2()
+
+
+'''
+fork操作，调用一次，俩次返回。 因为OS自动把当前进程(父进程)复制了一份(子进程),然后分别在父进程和子进程内返回。
+子进程永远返回0，父进程返回子进程ID，子进程通过getppid获取父进程ID
+注意: 在windows上不能运行
+'''
+import os
+print('Process (%s) start...' % os.getpid())
+pid= os.fork()
+if pid == 0:
+    print('I am child process (%s) and my parent is %s.' % (os.getpid(), os.getppid()))
+else:
+    print('I (%s) just created a child prcess (%s).' %(os.getpid(), pid))
+
+
+'''
+multiprocessing是跨平台的多进程模块，提供了一个Process类代表一个进程
+'''
+from multiprocessing import Process
+import time
+
+def f(n):
+    time.sleep(1)
+    print(n*n)
+if __name__ == '__main__':
+    for i in range(10):
+        p = Process(target = f, args=[i,])
+        p.start()    
+
+'''
+进程间通信Queue
+通过共享变量Queue来通信
+'''
+from multiprocessing import Process, Queue
+import time
+
+def write(q):
+    for i in ['A', 'B', 'C', 'D', 'E']:
+        print('put %s to queue' % i)
+        q.put(i)
+        time.sleep(0.5)
+
+def read(q):
+    while True:
+        v = q.get(True)
+        print('get %s from queue' %v)
+        
+if __name__ == '__main__':
+    q = Queue()
+    pw = Process(target = write, args=(q,))
+    pr = Process(target = read, args=(q,))
+    pw.start()
+    pr.start()
+    pr.join()
+    pr.terminal()
+
+'''
+进程池 Pool 用于批量创建子进程 灵活控制子进程的数量
+'''
+from multiprocessing import Pool
+import time
+
+def f(x):
+    print(x*x)
+    time.sleep(2)
+    return x*x
+
+if __name__ == '__main__':
+    pool = Pool(processes=5)
+    res_list=[]
+    for x in range(10):
+        # 以异步并行的方式启动进程  同步等待使用Pool.apply
+        res = pool.apply_async(f, [i,])
+        print('------:', i)
+        res_list.append(res)
+    pool.close()
+    pool.join()
+    
+    for r in res_list:
+        print('result', (r.get(timeout=5)))
+
+
+'''
+多个进程之间的内存资源独立的，多线程可以共享一个进程的内存资源
+'''
+from multiprocessing import Process
+import threading
+import time
+lock = threading.Lock()
+
+def run(info_list, n):
+    lock.acquire()
+    info_list.append(n)
+    lock.release()
+    print('%s\n' % info_list)
+    
+if __name__ == '__main__':
+    info=[]
+    for i in range(10):
+        p = Process(target = run, args=[info, i])
+        p.start()
+        p.join()
+    time.sleep(1)
+
+    print('-------------threading---------------')    
+    
+    for i in range(10):
+        p = threading.Thread(target=run, args=[info, i])
+        p.start()
+        p.join()
+
+
+'''
+函数式编程
+immutable data : 不可变数据
+first class function: 函数像变量一样使用
+尾递归优化: 每次递归都重用stack
+优点: 
+    parallelization 并行
+    lazy evaluation 惰性求值  
+    determinism确定性  
+
+Python中的lambda, map, filter, reduce 
+map(function, collection) : 依次执行function(collection[i]) -> List
+filter(function, collection): 依次执行function(collection[i]) -> collection
+reduce(function, collection, start_value): 依次迭代调用如有start_value则作为初始值
+'''
+g = lambda x: x * 2
+print(g(3))
+
+print((lambda x : x * 2)(6))
+
+name_len = list(map(len, ["I", "am", "you"]))
+print(name_len)
+
+
+items = [1, 2, 3, 4, 5]
+squard = list(map(lambda x: x**2, items))
+print(squard)
+
+number_list = range(-5, 5)
+print(list(number_list))
+less_than_zero = list(filter(lambda x: x<0 , number_list))
+print(less_than_zero)
+
+import functools
+
+def add(x,y):
+    return x+y
+print(functools.reduce(add, range(1, 5)))
+print(functools.reduce(add, range(1, 5), 10))
+
+
+# 描述是在干什么而不是怎么干
+num = [2, -5, 9, 7, -2, 5, 3, 1, 0, -3, 8]
+positive_num = list(filter(lambda x: x>0, num))
+#average = functools.reduce(add, positive_num) /len(positive_num)
+average = functools.reduce(lambda x,y : x + y , positive_num) /len(positive_num)
+print(average)
+
+
+'''
+正则表达式
+http://www.cnblogs.com/chuxiuhong/p/5885073.html
+'''
+import re
+m = re.match(r'dog', 'dog cat dog')
+print(m.group())
+
+print(re.match(r'cat', 'dog cat dog'))
+
+s = re.search(r'cat', 'dog cat dog')
+print(s.group)
+
+print(re.findall(r'dog', 'dog cat doge'))
+
+contactInfo = 'Doe, John: 5555-1212'
+m = re.search(r'(\w+), (\w+): (\S+)', contactInfo)
+print(m.group(0))
+print(m.group(1))
+print(m.group(2))
+print(m.group(3))
+
+strs = 'purple alice-b@google.com monkey dishwasher'
+match = re.search(r'[\w.-]+@[\w.-]+',strs)
+if match:
+    print(match.group())
+
+
+'''
+enumerate函数
+'''
+l = [1, 2 ,3]
+for index, text in enumerate(l):
+    print(index, text)
+    
+'''
+cllections 是python内建的一个集合模块
+deque是为了高效的实现插入和删除操作的双向列表，适合队列和栈
+OrderedDict会按照插入的顺序排列
+Counter是个简单的计数器，是dict的一个子类，有统计了各个元素的个数等API
+'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
