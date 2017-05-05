@@ -17,3 +17,11 @@ git push -u origin master
 git add .  
 git commit -m "xxx"  
 git push -u origin master  
+
+
+
+#更新本地
+
+git branch
+
+git pull
