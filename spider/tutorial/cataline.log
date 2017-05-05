@@ -1,0 +1,656 @@
+Fri, 05 May 2017 17:31:40 log.py[line:128] INFO Scrapy 1.3.3 started (bot: tutorial)
+Fri, 05 May 2017 17:31:40 log.py[line:131] INFO Overridden settings: {'NEWSPIDER_MODULE': 'tutorial.spiders', 'FEED_URI': 'items.json', 'CONCURRENT_REQUESTS': 20, 'SPIDER_MODULES': ['tutorial.spiders'], 'BOT_NAME': 'tutorial', 'ROBOTSTXT_OBEY': True, 'FEED_FORMAT': 'json', 'REDIRECT_ENABLED': False, 'DOWNLOAD_DELAY': 1}
+Fri, 05 May 2017 17:31:40 middleware.py[line:53] INFO Enabled extensions:
+['scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+Fri, 05 May 2017 17:31:40 middleware.py[line:53] INFO Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'tutorial.middlewares.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+Fri, 05 May 2017 17:31:40 middleware.py[line:53] INFO Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+Fri, 05 May 2017 17:31:40 middleware.py[line:53] INFO Enabled item pipelines:
+[]
+Fri, 05 May 2017 17:31:40 engine.py[line:258] INFO Spider opened
+Fri, 05 May 2017 17:31:40 logstats.py[line:48] INFO Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+Fri, 05 May 2017 17:31:40 telnet.py[line:60] DEBUG Telnet console listening on 127.0.0.1:6023
+Fri, 05 May 2017 17:31:41 engine.py[line:240] DEBUG Crawled (200) <GET http://www.missweike2017.com/robots.txt> (referer: None)
+Fri, 05 May 2017 17:31:42 engine.py[line:240] DEBUG Crawled (200) <GET http://www.missweike2017.com/class.asp?page=1&typeid=4&areaid=301> (referer: None)
+Fri, 05 May 2017 17:31:44 engine.py[line:240] DEBUG Crawled (200) <GET http://www.missweike2017.com/class.asp?page=2&typeid=4&areaid=301> (referer: None)
+Fri, 05 May 2017 17:31:44 engine.py[line:240] DEBUG Crawled (200) <GET http://www.missweike2017.com/class.asp?page=3&typeid=4&areaid=301> (referer: None)
+Fri, 05 May 2017 17:31:45 engine.py[line:240] DEBUG Crawled (200) <GET http://www.missweike2017.com/show.asp?id=73926> (referer: http://www.missweike2017.com/class.asp?page=1&typeid=4&areaid=301)
+Fri, 05 May 2017 17:31:45 scraper.py[line:237] DEBUG Scraped from <200 http://www.missweike2017.com/show.asp?id=73926>
+{'age': u'20',
+ 'area': 'area',
+ 'env': u'\u6e29\u99a8',
+ 'image_urls': [u'http://www.missweike2017.com/UploadFile/image/042026015925.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/042039070768.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/042039079518.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/042039088737.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/042039096081.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/042039114362.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/042039131550.jpg'],
+ 'price': u'1000',
+ 'project': u'khm69',
+ 'quality': u'\u542c\u8bdd',
+ 'security': u'\u5b89\u5168\u7684',
+ 'shape': u'\u53ef\u7231\u5c0f\u5ae9\u59b9',
+ 'title': 'title'}
+Fri, 05 May 2017 17:31:45 engine.py[line:240] DEBUG Crawled (200) <GET http://www.missweike2017.com/show.asp?id=73618> (referer: http://www.missweike2017.com/class.asp?page=1&typeid=4&areaid=301)
+Fri, 05 May 2017 17:31:46 scraper.py[line:237] DEBUG Scraped from <200 http://www.missweike2017.com/show.asp?id=73618>
+{'age': u'\u5e73\u574723',
+ 'area': 'area',
+ 'env': u'\u770b\u81ea\u5df1\u627e\u7684\u9152\u5e97',
+ 'image_urls': [u'http://www.missweike2017.com/UploadFile/image/201743022202869.JPG',
+                u'http://www.missweike2017.com/UploadFile/image/2017430222017121.JPG',
+                u'http://www.missweike2017.com/UploadFile/image/2017430222032775.JPG',
+                u'http://www.missweike2017.com/UploadFile/image/2017430222126568.JPG',
+                u'http://www.missweike2017.com/UploadFile/image/2017430222131270.JPG',
+                u'http://www.missweike2017.com/UploadFile/image/2017430222155695.JPG'],
+ 'price': u'600\u4e00\u6b21\u8fc7\u591c1200',
+ 'project': u'\u5168\u5957',
+ 'quality': u'\u633a\u597d\u7684',
+ 'security': u'\u8fd8\u884c\uff0c\u6bd5\u7adf\u662f\u5728\u5916\u9762\u81ea\u5df1\u627e\u9152\u5e97\uff0c\u6240\u4ee5\u770b\u81ea\u5df1',
+ 'shape': u'\u8eab\u6750\u4e0d\u9519\uff0c\u80f8\u5927\u6d3b\u597d',
+ 'title': 'title'}
+Fri, 05 May 2017 17:31:47 engine.py[line:240] DEBUG Crawled (200) <GET http://www.missweike2017.com/show.asp?id=73634> (referer: http://www.missweike2017.com/class.asp?page=1&typeid=4&areaid=301)
+Fri, 05 May 2017 17:31:47 scraper.py[line:158] ERROR Spider error processing <GET http://www.missweike2017.com/show.asp?id=73634> (referer: http://www.missweike2017.com/class.asp?page=1&typeid=4&areaid=301)
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\Jack\Desktop\tutorial\tutorial\spiders\dmoz_spider.py", line 82, in parse_item
+    self.write_to_files(item)
+  File "C:\Users\Jack\Desktop\tutorial\tutorial\spiders\dmoz_spider.py", line 103, in write_to_files
+    with open(filename, 'wb') as f:
+IOError: [Errno 2] No such file or directory: u'age_25_price_800/P.html'
+Fri, 05 May 2017 17:31:48 engine.py[line:240] DEBUG Crawled (200) <GET http://www.missweike2017.com/show.asp?id=73693> (referer: http://www.missweike2017.com/class.asp?page=1&typeid=4&areaid=301)
+Fri, 05 May 2017 17:31:48 scraper.py[line:237] DEBUG Scraped from <200 http://www.missweike2017.com/show.asp?id=73693>
+{'age': u'23',
+ 'area': 'area',
+ 'env': u'\u597d',
+ 'image_urls': [u'http://www.missweike2017.com/UploadFile/image/012211060907.jpg'],
+ 'price': u'800',
+ 'project': u'MLKH69YYY',
+ 'quality': u'\u670d\u52a1\u6001\u5ea6\u4e0d\u9519',
+ 'security': u'\u5b89\u5168',
+ 'shape': u'\u989c\u503c\u9ad8',
+ 'title': 'title'}
+Fri, 05 May 2017 17:31:48 engine.py[line:240] DEBUG Crawled (200) <GET http://www.missweike2017.com/show.asp?id=73809> (referer: http://www.missweike2017.com/class.asp?page=1&typeid=4&areaid=301)
+Fri, 05 May 2017 17:31:49 scraper.py[line:158] ERROR Spider error processing <GET http://www.missweike2017.com/show.asp?id=73809> (referer: http://www.missweike2017.com/class.asp?page=1&typeid=4&areaid=301)
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\Jack\Desktop\tutorial\tutorial\spiders\dmoz_spider.py", line 82, in parse_item
+    self.write_to_files(item)
+  File "C:\Users\Jack\Desktop\tutorial\tutorial\spiders\dmoz_spider.py", line 103, in write_to_files
+    with open(filename, 'wb') as f:
+IOError: [Errno 2] No such file or directory: u'age_22_price_1500/PP.html'
+Fri, 05 May 2017 17:31:50 engine.py[line:240] DEBUG Crawled (200) <GET http://www.missweike2017.com/show.asp?id=73808> (referer: http://www.missweike2017.com/class.asp?page=1&typeid=4&areaid=301)
+Fri, 05 May 2017 17:31:50 scraper.py[line:237] DEBUG Scraped from <200 http://www.missweike2017.com/show.asp?id=73808>
+{'age': u'23',
+ 'area': 'area',
+ 'env': u'\u5e72\u51c0',
+ 'image_urls': [u'http://www.missweike2017.com/UploadFile/image/022343182345.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/022343262031.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/022343355780.jpg'],
+ 'price': u'400P800',
+ 'project': u'\u505a\u7231',
+ 'quality': u'\u670d\u52a1\u86ee\u597d\u7684',
+ 'security': u'\u5b89\u5168\u56de\u6765\u4e86',
+ 'shape': u'\u6f02\u4eae',
+ 'title': 'title'}
+Fri, 05 May 2017 17:31:51 engine.py[line:240] DEBUG Crawled (200) <GET http://www.missweike2017.com/show.asp?id=73982> (referer: http://www.missweike2017.com/class.asp?page=1&typeid=4&areaid=301)
+Fri, 05 May 2017 17:31:51 scraper.py[line:237] DEBUG Scraped from <200 http://www.missweike2017.com/show.asp?id=73982>
+{'age': u'30+',
+ 'area': 'area',
+ 'env': u'\u81ea\u5df1\u5f00\u9152\u5e97',
+ 'image_urls': [u'http://www.missweike2017.com/UploadFile/image/041722050925.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/041722146550.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/041722218893.jpg'],
+ 'price': u'\u5305\u591c700',
+ 'project': u'\u5168\u5957\uff0c',
+ 'quality': u'\u670d\u52a1\u6001\u5ea6\u597d\uff0c\u4e0d\u673a\u8f66',
+ 'security': u'\u5b89\u5168\u56de\u6765',
+ 'shape': u'\u6210\u719f\u80f8\u5927\u6280\u672f\u597d',
+ 'title': 'title'}
+Fri, 05 May 2017 17:31:52 engine.py[line:240] DEBUG Crawled (200) <GET http://www.missweike2017.com/show.asp?id=73927> (referer: http://www.missweike2017.com/class.asp?page=1&typeid=4&areaid=301)
+Fri, 05 May 2017 17:31:53 scraper.py[line:237] DEBUG Scraped from <200 http://www.missweike2017.com/show.asp?id=73927>
+{'age': u'28',
+ 'area': 'area',
+ 'env': u'\u633a\u597d\u7684',
+ 'image_urls': [u'http://www.missweike2017.com/UploadFile/image/042016390612.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/042016396550.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/042016405300.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/042017062643.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/042017071393.jpg'],
+ 'price': u'300',
+ 'project': u'khml\u7b49',
+ 'quality': u'\u670d\u52a1\u6001\u5ea6\u4e0d\u9519',
+ 'security': u'\u5b89\u5168\u7684',
+ 'shape': u'\u8fd8\u884c',
+ 'title': 'title'}
+Fri, 05 May 2017 17:31:54 engine.py[line:240] DEBUG Crawled (200) <GET http://www.missweike2017.com/show.asp?id=73171> (referer: http://www.missweike2017.com/class.asp?page=1&typeid=4&areaid=301)
+Fri, 05 May 2017 17:31:54 scraper.py[line:237] DEBUG Scraped from <200 http://www.missweike2017.com/show.asp?id=73171>
+{'age': u'26-30',
+ 'area': 'area',
+ 'env': u'\u5e72\u51c0',
+ 'image_urls': [u'http://www.missweike2017.com/UploadFile/image/231812424722.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/231812435191.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/231812444253.jpg'],
+ 'price': u'400',
+ 'project': u'khml\u7b49',
+ 'quality': u'\u70ed\u60c5\u98ce\u9a9a',
+ 'security': u'\u5b89\u5168',
+ 'shape': u'\u8f7b\u719f',
+ 'title': 'title'}
+Fri, 05 May 2017 17:31:55 engine.py[line:240] DEBUG Crawled (200) <GET http://www.missweike2017.com/show.asp?id=73275> (referer: http://www.missweike2017.com/class.asp?page=1&typeid=4&areaid=301)
+Fri, 05 May 2017 17:31:55 scraper.py[line:237] DEBUG Scraped from <200 http://www.missweike2017.com/show.asp?id=73275>
+{'age': u'22\u5c81',
+ 'area': 'area',
+ 'env': u'\u633a\u597d\u7684',
+ 'image_urls': [],
+ 'price': u'500',
+ 'project': u'\u6d17\u5439ML',
+ 'quality': u'\u670d\u52a1\u6001\u5ea6\u597d',
+ 'security': u'\u5b89\u5168\u56de\u6765',
+ 'shape': u'\u6027\u611f',
+ 'title': 'title'}
+Fri, 05 May 2017 17:31:56 engine.py[line:240] DEBUG Crawled (200) <GET http://www.missweike2017.com/show.asp?id=73265> (referer: http://www.missweike2017.com/class.asp?page=1&typeid=4&areaid=301)
+Fri, 05 May 2017 17:31:56 scraper.py[line:237] DEBUG Scraped from <200 http://www.missweike2017.com/show.asp?id=73265>
+{'age': u'20\u51fa\u5934',
+ 'area': 'area',
+ 'env': u'\u8212\u9002',
+ 'image_urls': [u'http://www.missweike2017.com/UploadFile/image/252219517327.jpg'],
+ 'price': u'400',
+ 'project': u'khml\u7b49',
+ 'quality': u'\u6001\u5ea6\u6e29\u67d4',
+ 'security': u'\u5b89\u5168',
+ 'shape': u'\u8eab\u6750\u597d',
+ 'title': 'title'}
+Fri, 05 May 2017 17:31:58 engine.py[line:240] DEBUG Crawled (200) <GET http://www.missweike2017.com/show.asp?id=73372> (referer: http://www.missweike2017.com/class.asp?page=1&typeid=4&areaid=301)
+Fri, 05 May 2017 17:31:58 scraper.py[line:237] DEBUG Scraped from <200 http://www.missweike2017.com/show.asp?id=73372>
+{'age': u'23\u5c81',
+ 'area': 'area',
+ 'env': u'\u5e72\u51c0',
+ 'image_urls': [u'http://www.missweike2017.com/UploadFile/image/260008500765.png',
+                u'http://www.missweike2017.com/UploadFile/image/260009252015.png',
+                u'http://www.missweike2017.com/UploadFile/image/260008271546.png',
+                u'http://www.missweike2017.com/UploadFile/image/260009462796.png',
+                u'http://www.missweike2017.com/UploadFile/image/260444055140.jpg'],
+ 'price': u'500',
+ 'project': u'MLKJMY',
+ 'quality': u'\u6e29\u67d4\uff0c\u4e0d\u673a\u8f66',
+ 'security': u'\u5b89\u5168',
+ 'shape': u'\u6f02\u4eae\uff0c\u8eab\u6750\u597d',
+ 'title': 'title'}
+Fri, 05 May 2017 17:31:59 engine.py[line:240] DEBUG Crawled (200) <GET http://www.missweike2017.com/show.asp?id=73364> (referer: http://www.missweike2017.com/class.asp?page=1&typeid=4&areaid=301)
+Fri, 05 May 2017 17:31:59 scraper.py[line:237] DEBUG Scraped from <200 http://www.missweike2017.com/show.asp?id=73364>
+{'age': u'19\u5c81',
+ 'area': 'area',
+ 'env': u'\u5e72\u51c0',
+ 'image_urls': [u'http://www.missweike2017.com/UploadFile/image/260017466858.png',
+                u'http://www.missweike2017.com/UploadFile/image/260018570452.png',
+                u'http://www.missweike2017.com/UploadFile/image/260020053890.png',
+                u'http://www.missweike2017.com/UploadFile/image/260020251077.png'],
+ 'price': u'500',
+ 'project': u'MLKJMY',
+ 'quality': u'\u6e29\u67d4\uff0c\u817c\u8146',
+ 'security': u'\u5b89\u5168',
+ 'shape': u'\u6f02\u4eae\uff0c\u53ef\u7231',
+ 'title': 'title'}
+Fri, 05 May 2017 17:32:01 engine.py[line:240] DEBUG Crawled (200) <GET http://www.missweike2017.com/show.asp?id=73563> (referer: http://www.missweike2017.com/class.asp?page=1&typeid=4&areaid=301)
+Fri, 05 May 2017 17:32:02 scraper.py[line:237] DEBUG Scraped from <200 http://www.missweike2017.com/show.asp?id=73563>
+{'age': u'20',
+ 'area': 'area',
+ 'env': u'\u5c0f\u533a\u623f\uff0c\u5f88\u8212\u670d',
+ 'image_urls': [u'http://www.missweike2017.com/UploadFile/image/282110435595.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/282110496063.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/282110515595.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/282110532470.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/282110555595.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/282110568720.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/282110575126.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/282110584970.jpg'],
+ 'price': u'800p',
+ 'project': u'ML,KJ',
+ 'quality': u'\u914d\u5408\uff0c\u70ed\u60c5\uff0c\u8d85\u7ea7\u68d2',
+ 'security': u'\u5b89\u5168\u56de\u6765',
+ 'shape': u'\u80f8\u5927\u4eba\u7f8e',
+ 'title': 'title'}
+Fri, 05 May 2017 17:32:12 engine.py[line:240] DEBUG Crawled (200) <GET http://www.missweike2017.com/show.asp?id=65020> (referer: http://www.missweike2017.com/class.asp?page=2&typeid=4&areaid=301)
+Fri, 05 May 2017 17:32:12 scraper.py[line:158] ERROR Spider error processing <GET http://www.missweike2017.com/show.asp?id=65020> (referer: http://www.missweike2017.com/class.asp?page=2&typeid=4&areaid=301)
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\Jack\Desktop\tutorial\tutorial\spiders\dmoz_spider.py", line 82, in parse_item
+    self.write_to_files(item)
+  File "C:\Users\Jack\Desktop\tutorial\tutorial\spiders\dmoz_spider.py", line 103, in write_to_files
+    with open(filename, 'wb') as f:
+IOError: [Errno 2] No such file or directory: u'age_25_price_300/P600/PP.html'
+Fri, 05 May 2017 17:32:13 engine.py[line:240] DEBUG Crawled (200) <GET http://www.missweike2017.com/show.asp?id=65043> (referer: http://www.missweike2017.com/class.asp?page=2&typeid=4&areaid=301)
+Fri, 05 May 2017 17:32:14 scraper.py[line:237] DEBUG Scraped from <200 http://www.missweike2017.com/show.asp?id=65043>
+{'age': u'20\u51fa\u5934',
+ 'area': 'area',
+ 'env': u'\u5e72\u51c0\u6574\u6d01',
+ 'image_urls': [u'http://www.missweike2017.com/UploadFile/image/062310159253.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/062310164410.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/062310170035.jpg'],
+ 'price': u'300',
+ 'project': u'khml',
+ 'quality': u'\u6f02\u4eae',
+ 'security': u'\u5b89\u5168',
+ 'shape': u'\u914d\u5408',
+ 'title': 'title'}
+Fri, 05 May 2017 17:32:15 engine.py[line:240] DEBUG Crawled (200) <GET http://www.missweike2017.com/show.asp?id=64939> (referer: http://www.missweike2017.com/class.asp?page=2&typeid=4&areaid=301)
+Fri, 05 May 2017 17:32:15 scraper.py[line:237] DEBUG Scraped from <200 http://www.missweike2017.com/show.asp?id=64939>
+{'age': u'20',
+ 'area': 'area',
+ 'env': u'\u5f88\u597d',
+ 'image_urls': [u'http://www.missweike2017.com/UploadFile/image/072128558316.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/072128564566.jpg'],
+ 'price': u'500',
+ 'project': u'khml69',
+ 'quality': u'\u6e29\u67d4',
+ 'security': u'\u5b89\u5168\u7684',
+ 'shape': u'\u6f02\u4eae\u53ef\u7231',
+ 'title': 'title'}
+Fri, 05 May 2017 17:32:15 engine.py[line:240] DEBUG Crawled (200) <GET http://www.missweike2017.com/show.asp?id=73458> (referer: http://www.missweike2017.com/class.asp?page=1&typeid=4&areaid=301)
+Fri, 05 May 2017 17:32:15 scraper.py[line:237] DEBUG Scraped from <200 http://www.missweike2017.com/show.asp?id=73458>
+{'age': u'22',
+ 'area': 'area',
+ 'env': u'\u5e72\u51c0',
+ 'image_urls': [u'http://www.missweike2017.com/UploadFile/image/262159294980.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/262159300448.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/262159326073.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/262159345605.jpg'],
+ 'price': u'400',
+ 'project': u'khml\u7b49',
+ 'quality': u'\u542c\u8bdd',
+ 'security': u'\u5b89\u5168',
+ 'shape': u'\u53ef\u7231\u76ae\u80a4\u767d\u7699',
+ 'title': 'title'}
+Fri, 05 May 2017 17:32:15 engine.py[line:240] DEBUG Crawled (200) <GET http://www.missweike2017.com/show.asp?id=64804> (referer: http://www.missweike2017.com/class.asp?page=2&typeid=4&areaid=301)
+Fri, 05 May 2017 17:32:15 scraper.py[line:237] DEBUG Scraped from <200 http://www.missweike2017.com/show.asp?id=64804>
+{'age': u'20',
+ 'area': 'area',
+ 'env': u'\u5e72\u51c0\u8212\u9002',
+ 'image_urls': [u'http://www.missweike2017.com/UploadFile/image/092317076441.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/092317082378.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/092317101285.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/092317134097.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/092317158472.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/092317188472.jpg'],
+ 'price': u'600',
+ 'project': u'khml\u7b49',
+ 'quality': u'\u6f02\u4eae\u53ef\u7231',
+ 'security': u'\u5b89\u5168',
+ 'shape': u'\u5ae9\u5ae9\u7684',
+ 'title': 'title'}
+Fri, 05 May 2017 17:32:17 engine.py[line:240] DEBUG Crawled (200) <GET http://www.missweike2017.com/show.asp?id=73006> (referer: http://www.missweike2017.com/class.asp?page=2&typeid=4&areaid=301)
+Fri, 05 May 2017 17:32:17 scraper.py[line:237] DEBUG Scraped from <200 http://www.missweike2017.com/show.asp?id=73006>
+{'age': u'24',
+ 'area': 'area',
+ 'env': u'3\u661f\u7ea7\u9152\u5e97',
+ 'image_urls': [u'http://www.missweike2017.com/UploadFile/image/2017421153245195.JPG',
+                u'http://www.missweike2017.com/UploadFile/image/2017421153245251.JPG',
+                u'http://www.missweike2017.com/UploadFile/image/2017421153252563.JPG'],
+ 'price': u'1300',
+ 'project': u'\u5168\u5957\u505a\u7231\u3001\u53e3\u7206\u3001\u5236\u670d',
+ 'quality': u'\u5f88\u597d',
+ 'security': u'\u5b89\u5168',
+ 'shape': u'\u6f02\u4eae',
+ 'title': 'title'}
+Fri, 05 May 2017 17:32:18 engine.py[line:240] DEBUG Crawled (200) <GET http://www.missweike2017.com/show.asp?id=64656> (referer: http://www.missweike2017.com/class.asp?page=2&typeid=4&areaid=301)
+Fri, 05 May 2017 17:32:18 engine.py[line:240] DEBUG Crawled (200) <GET http://www.missweike2017.com/show.asp?id=64801> (referer: http://www.missweike2017.com/class.asp?page=2&typeid=4&areaid=301)
+Fri, 05 May 2017 17:32:18 scraper.py[line:237] DEBUG Scraped from <200 http://www.missweike2017.com/show.asp?id=64656>
+{'age': u'20\u591a\u70b9',
+ 'area': 'area',
+ 'env': u'\u5b89\u5168',
+ 'image_urls': [u'http://www.missweike2017.com/UploadFile/image/112313519878.jpg'],
+ 'price': u'\u81ea\u5df1\u8054\u7cfb',
+ 'project': u'400',
+ 'quality': u'\u6001\u5ea6\u4e0d\u9519',
+ 'security': u'\u5b89\u5168',
+ 'shape': u'\u5ae9\u5ae9\u7684',
+ 'title': 'title'}
+Fri, 05 May 2017 17:32:18 scraper.py[line:158] ERROR Spider error processing <GET http://www.missweike2017.com/show.asp?id=64801> (referer: http://www.missweike2017.com/class.asp?page=2&typeid=4&areaid=301)
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\Jack\Desktop\tutorial\tutorial\spiders\dmoz_spider.py", line 82, in parse_item
+    self.write_to_files(item)
+  File "C:\Users\Jack\Desktop\tutorial\tutorial\spiders\dmoz_spider.py", line 103, in write_to_files
+    with open(filename, 'wb') as f:
+IOError: [Errno 2] No such file or directory: u'age_25_price_300/P500/PP.html'
+Fri, 05 May 2017 17:32:18 engine.py[line:240] DEBUG Crawled (200) <GET http://www.missweike2017.com/show.asp?id=73200> (referer: http://www.missweike2017.com/class.asp?page=1&typeid=4&areaid=301)
+Fri, 05 May 2017 17:32:18 scraper.py[line:237] DEBUG Scraped from <200 http://www.missweike2017.com/show.asp?id=73200>
+{'age': u'17',
+ 'area': 'area',
+ 'env': u'\u4e0d\u9519',
+ 'image_urls': [u'http://www.missweike2017.com/UploadFile/image/230904468160.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/230904597222.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/230905162691.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/230905283941.jpg'],
+ 'price': u'400',
+ 'project': u'ml',
+ 'quality': u'\u4e0d\u673a\u8f66',
+ 'security': u'\u5b89\u5168',
+ 'shape': u'\u5e74\u8f7b',
+ 'title': 'title'}
+Fri, 05 May 2017 17:32:19 engine.py[line:240] DEBUG Crawled (200) <GET http://www.missweike2017.com/show.asp?id=64653> (referer: http://www.missweike2017.com/class.asp?page=2&typeid=4&areaid=301)
+Fri, 05 May 2017 17:32:19 engine.py[line:240] DEBUG Crawled (200) <GET http://www.missweike2017.com/show.asp?id=65077> (referer: http://www.missweike2017.com/class.asp?page=2&typeid=4&areaid=301)
+Fri, 05 May 2017 17:32:19 scraper.py[line:158] ERROR Spider error processing <GET http://www.missweike2017.com/show.asp?id=64653> (referer: http://www.missweike2017.com/class.asp?page=2&typeid=4&areaid=301)
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\Jack\Desktop\tutorial\tutorial\spiders\dmoz_spider.py", line 82, in parse_item
+    self.write_to_files(item)
+  File "C:\Users\Jack\Desktop\tutorial\tutorial\spiders\dmoz_spider.py", line 103, in write_to_files
+    with open(filename, 'wb') as f:
+IOError: [Errno 2] No such file or directory: u'age_26\u5c81_price_400/p600/pp.html'
+Fri, 05 May 2017 17:32:19 scraper.py[line:237] DEBUG Scraped from <200 http://www.missweike2017.com/show.asp?id=65077>
+{'age': u'23',
+ 'area': 'area',
+ 'env': u'\u5e72\u51c0',
+ 'image_urls': [u'http://www.missweike2017.com/UploadFile/image/052308076118.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/052308280831.jpg'],
+ 'price': u'400',
+ 'project': u'khml',
+ 'quality': u'\u6001\u5ea6\u4e0d\u9519',
+ 'security': u'\u5b89\u5168\u7684',
+ 'shape': u'\u8eab\u6750\u597d\u6027\u611f',
+ 'title': 'title'}
+Fri, 05 May 2017 17:32:20 engine.py[line:240] DEBUG Crawled (200) <GET http://www.missweike2017.com/show.asp?id=64599> (referer: http://www.missweike2017.com/class.asp?page=2&typeid=4&areaid=301)
+Fri, 05 May 2017 17:32:21 scraper.py[line:237] DEBUG Scraped from <200 http://www.missweike2017.com/show.asp?id=64599>
+{'age': u'25\u5de6\u53f3',
+ 'area': 'area',
+ 'env': u'\u5e72\u51c0',
+ 'image_urls': [u'http://www.missweike2017.com/UploadFile/image/122300394722.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/122300402378.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/122300450503.jpg'],
+ 'price': u'300500',
+ 'project': u'khml\u7b49',
+ 'quality': u'\u670d\u52a1\u4e0d\u9519',
+ 'security': u'\u5b89\u5168',
+ 'shape': u'\u6ce2\u5927\u81c0\u7fd8',
+ 'title': 'title'}
+Fri, 05 May 2017 17:32:22 engine.py[line:240] DEBUG Crawled (200) <GET http://www.missweike2017.com/show.asp?id=64521> (referer: http://www.missweike2017.com/class.asp?page=2&typeid=4&areaid=301)
+Fri, 05 May 2017 17:32:22 scraper.py[line:237] DEBUG Scraped from <200 http://www.missweike2017.com/show.asp?id=64521>
+{'age': u'23\u5de6\u53f3',
+ 'area': 'area',
+ 'env': u'\u5f88\u597d',
+ 'image_urls': [u'http://www.missweike2017.com/UploadFile/image/132250310347.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/132250317535.jpg'],
+ 'price': u'400',
+ 'project': u'khml\u7b49',
+ 'quality': u'\u670d\u52a1\u975e\u5e38\u4e0d\u9519',
+ 'security': u'\u5b89\u5168',
+ 'shape': u'\u6e29\u67d4\u914d\u5408',
+ 'title': 'title'}
+Fri, 05 May 2017 17:32:23 engine.py[line:240] DEBUG Crawled (200) <GET http://www.missweike2017.com/show.asp?id=64433> (referer: http://www.missweike2017.com/class.asp?page=2&typeid=4&areaid=301)
+Fri, 05 May 2017 17:32:24 scraper.py[line:237] DEBUG Scraped from <200 http://www.missweike2017.com/show.asp?id=64433>
+{'age': u'25',
+ 'area': 'area',
+ 'env': u'\u8212\u9002',
+ 'image_urls': [u'http://www.missweike2017.com/UploadFile/image/142203477378.jpg'],
+ 'price': u'500',
+ 'project': u'khmlsw',
+ 'quality': u'\u6001\u5ea6\u597d',
+ 'security': u'\u5b89\u5168',
+ 'shape': u'\u8eab\u6750\u6c14\u8d28ok',
+ 'title': 'title'}
+Fri, 05 May 2017 17:32:24 engine.py[line:240] DEBUG Crawled (200) <GET http://www.missweike2017.com/show.asp?id=64343> (referer: http://www.missweike2017.com/class.asp?page=2&typeid=4&areaid=301)
+Fri, 05 May 2017 17:32:25 scraper.py[line:237] DEBUG Scraped from <200 http://www.missweike2017.com/show.asp?id=64343>
+{'age': u'26',
+ 'area': 'area',
+ 'env': u'\u5e72\u51c0',
+ 'image_urls': [u'http://www.missweike2017.com/UploadFile/image/162302365660.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/162302384097.jpg'],
+ 'price': u'500',
+ 'project': u'khml\u7b49',
+ 'quality': u'\u6001\u5ea6\u4e0d\u9519',
+ 'security': u'\u5b89\u5168\u7684',
+ 'shape': u'\u8eab\u6750\u597d',
+ 'title': 'title'}
+Fri, 05 May 2017 17:32:25 retry.py[line:68] DEBUG Retrying <GET http://www.missweike2017.com/show.asp?id=73656> (failed 1 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+Fri, 05 May 2017 17:32:26 engine.py[line:240] DEBUG Crawled (200) <GET http://www.missweike2017.com/show.asp?id=72788> (referer: http://www.missweike2017.com/class.asp?page=2&typeid=4&areaid=301)
+Fri, 05 May 2017 17:32:26 scraper.py[line:237] DEBUG Scraped from <200 http://www.missweike2017.com/show.asp?id=72788>
+{'age': u'35',
+ 'area': 'area',
+ 'env': u'\u5bbe\u9986',
+ 'image_urls': [u'http://www.missweike2017.com/UploadFile/image/171730241753.jpg'],
+ 'price': u'300\u4e0a\u95e8',
+ 'project': u'DP',
+ 'quality': u'\u60e8\u4e0d\u5fcd\u7779',
+ 'security': u'\u5b89\u5168',
+ 'shape': u'\u77ee\uff0c1\u7c7355',
+ 'title': 'title'}
+Fri, 05 May 2017 17:32:27 engine.py[line:240] DEBUG Crawled (200) <GET http://www.missweike2017.com/show.asp?id=72718> (referer: http://www.missweike2017.com/class.asp?page=2&typeid=4&areaid=301)
+Fri, 05 May 2017 17:32:27 scraper.py[line:237] DEBUG Scraped from <200 http://www.missweike2017.com/show.asp?id=72718>
+{'age': u'18',
+ 'area': 'area',
+ 'env': u'\u5f88\u597d\u5f88\u5e72\u51c0',
+ 'image_urls': [u'http://www.missweike2017.com/UploadFile/image/181212509566.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/181213084566.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/181213225347.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/181214415191.jpg'],
+ 'price': u'400',
+ 'project': u'ML',
+ 'quality': u'\u9ad8\u51b7',
+ 'security': u'\u5b89\u5168',
+ 'shape': u'\u5ae9\u59b9',
+ 'title': 'title'}
+Fri, 05 May 2017 17:32:29 engine.py[line:240] DEBUG Crawled (200) <GET http://www.missweike2017.com/show.asp?id=72729> (referer: http://www.missweike2017.com/class.asp?page=2&typeid=4&areaid=301)
+Fri, 05 May 2017 17:32:29 scraper.py[line:237] DEBUG Scraped from <200 http://www.missweike2017.com/show.asp?id=72729>
+{'age': u'27-35',
+ 'area': 'area',
+ 'env': u'\u4e00\u822c\uff0c\u5dee',
+ 'image_urls': [u'http://www.missweike2017.com/UploadFile/image/181527587066.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/181528070503.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/181534319722.png'],
+ 'price': u'80-150',
+ 'project': u'ML/KJ',
+ 'quality': u'\u5f88\u591a\uff0c\u81ea\u5df1\u9009',
+ 'security': u'\u5b89\u5168',
+ 'shape': u'\u5f88\u591a\uff0c\u81ea\u5df1\u9009',
+ 'title': 'title'}
+Fri, 05 May 2017 17:32:30 engine.py[line:240] DEBUG Crawled (200) <GET http://www.missweike2017.com/show.asp?id=72694> (referer: http://www.missweike2017.com/class.asp?page=2&typeid=4&areaid=301)
+Fri, 05 May 2017 17:32:30 scraper.py[line:158] ERROR Spider error processing <GET http://www.missweike2017.com/show.asp?id=72694> (referer: http://www.missweike2017.com/class.asp?page=2&typeid=4&areaid=301)
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\Jack\Desktop\tutorial\tutorial\spiders\dmoz_spider.py", line 56, in parse_item
+    age = trs[2].extract()
+  File "C:\Python27\lib\site-packages\parsel\selector.py", line 58, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+Fri, 05 May 2017 17:32:31 engine.py[line:240] DEBUG Crawled (200) <GET http://www.missweike2017.com/show.asp?id=72702> (referer: http://www.missweike2017.com/class.asp?page=2&typeid=4&areaid=301)
+Fri, 05 May 2017 17:32:31 scraper.py[line:237] DEBUG Scraped from <200 http://www.missweike2017.com/show.asp?id=72702>
+{'age': u'25-27',
+ 'area': 'area',
+ 'env': u'\u5e72\u51c0\u8212\u9002',
+ 'image_urls': [u'http://www.missweike2017.com/UploadFile/image/182113267847.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/182113252535.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/182113258003.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/182113287691.jpg'],
+ 'price': u'800',
+ 'project': u'khml69xtkb',
+ 'quality': u'\u6001\u5ea6\u9887\u597d',
+ 'security': u'\u5b89\u5168',
+ 'shape': u'\u6ce2\u5927\u5c41\u80a1\u7fd8',
+ 'title': 'title'}
+Fri, 05 May 2017 17:32:32 engine.py[line:240] DEBUG Crawled (200) <GET http://www.missweike2017.com/show.asp?id=72879> (referer: http://www.missweike2017.com/class.asp?page=2&typeid=4&areaid=301)
+Fri, 05 May 2017 17:32:33 scraper.py[line:158] ERROR Spider error processing <GET http://www.missweike2017.com/show.asp?id=72879> (referer: http://www.missweike2017.com/class.asp?page=2&typeid=4&areaid=301)
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\Jack\Desktop\tutorial\tutorial\spiders\dmoz_spider.py", line 82, in parse_item
+    self.write_to_files(item)
+  File "C:\Users\Jack\Desktop\tutorial\tutorial\spiders\dmoz_spider.py", line 103, in write_to_files
+    with open(filename, 'wb') as f:
+IOError: [Errno 2] No such file or directory: u'age_24_price_400/1700/2.html'
+Fri, 05 May 2017 17:32:34 engine.py[line:240] DEBUG Crawled (200) <GET http://www.missweike2017.com/show.asp?id=72935> (referer: http://www.missweike2017.com/class.asp?page=2&typeid=4&areaid=301)
+Fri, 05 May 2017 17:32:34 scraper.py[line:237] DEBUG Scraped from <200 http://www.missweike2017.com/show.asp?id=72935>
+{'age': u'23',
+ 'area': 'area',
+ 'env': u'\u8212\u9002',
+ 'image_urls': [u'http://www.missweike2017.com/UploadFile/image/192334556441.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/192334438785.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/192334456441.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/192334491441.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/192334523160.jpg'],
+ 'price': u'800',
+ 'project': u'khmlsw69kb',
+ 'quality': u'\u6001\u5ea6\u6e29\u67d4',
+ 'security': u'\u5b89\u5168',
+ 'shape': u'\u989c\u503c\u8eab\u6750OK',
+ 'title': 'title'}
+Fri, 05 May 2017 17:32:35 engine.py[line:240] DEBUG Crawled (200) <GET http://www.missweike2017.com/show.asp?id=72949> (referer: http://www.missweike2017.com/class.asp?page=2&typeid=4&areaid=301)
+Fri, 05 May 2017 17:32:35 scraper.py[line:237] DEBUG Scraped from <200 http://www.missweike2017.com/show.asp?id=72949>
+{'age': u'20',
+ 'area': 'area',
+ 'env': u'\u73af\u5883\u4f18\u96c5',
+ 'image_urls': [u'http://www.missweike2017.com/UploadFile/image/201640588316.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/201641014566.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/201641040816.jpg'],
+ 'price': u'500',
+ 'project': u'\u505a\u7231',
+ 'quality': u'90\u5206',
+ 'security': u'\u5b89\u5168',
+ 'shape': u'\u841d\u8389\u80f8\u5927',
+ 'title': 'title'}
+Fri, 05 May 2017 17:32:37 engine.py[line:240] DEBUG Crawled (200) <GET http://www.missweike2017.com/show.asp?id=73040> (referer: http://www.missweike2017.com/class.asp?page=2&typeid=4&areaid=301)
+Fri, 05 May 2017 17:32:37 scraper.py[line:237] DEBUG Scraped from <200 http://www.missweike2017.com/show.asp?id=73040>
+{'age': u'20\u591a',
+ 'area': 'area',
+ 'env': u'\u5b89\u5168\u8c6a\u534e',
+ 'image_urls': [u'http://www.missweike2017.com/UploadFile/image/202219307691.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/202219322066.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/202219361910.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/202219402066.jpg'],
+ 'price': u'700100',
+ 'project': u'khml\u7b49',
+ 'quality': u'\u7d20\u8d28\u4e0d\u9519',
+ 'security': u'\u5b89\u5168',
+ 'shape': u'\u989c\u503c\u9ad8\u8eab\u6750\u68d2',
+ 'title': 'title'}
+Fri, 05 May 2017 17:32:38 engine.py[line:240] DEBUG Crawled (200) <GET http://www.missweike2017.com/show.asp?id=73058> (referer: http://www.missweike2017.com/class.asp?page=2&typeid=4&areaid=301)
+Fri, 05 May 2017 17:32:38 scraper.py[line:237] DEBUG Scraped from <200 http://www.missweike2017.com/show.asp?id=73058>
+{'age': u'23',
+ 'area': 'area',
+ 'env': u'\u5f88\u597d',
+ 'image_urls': [u'http://www.missweike2017.com/UploadFile/image/212242310972.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/212242333941.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/212242361441.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/212242390503.jpg'],
+ 'price': u'400',
+ 'project': u'khmlxt',
+ 'quality': u'\u670d\u52a1\u70ed\u60c5',
+ 'security': u'\u5b89\u5168\u7684',
+ 'shape': u'\u6ce2\u5927\u81c0\u5706',
+ 'title': 'title'}
+Fri, 05 May 2017 17:32:39 engine.py[line:240] DEBUG Crawled (200) <GET http://www.missweike2017.com/show.asp?id=73216> (referer: http://www.missweike2017.com/class.asp?page=2&typeid=4&areaid=301)
+Fri, 05 May 2017 17:32:39 scraper.py[line:237] DEBUG Scraped from <200 http://www.missweike2017.com/show.asp?id=73216>
+{'age': u'21',
+ 'area': 'area',
+ 'env': u'\u6536\u62fe\u5f97\u633a\u5e72\u51c0\uff0c\u4e00\u822c\u4f4f\u5b85\u7684\u611f\u89c9',
+ 'image_urls': [u'http://www.missweike2017.com/UploadFile/image/221909515347.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/221910025035.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/221910044097.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/221910089097.jpg',
+                u'http://www.missweike2017.com/UploadFile/image/221910163941.jpg'],
+ 'price': u'400',
+ 'project': u'ML\uff0cKJ\uff0c\u989c\u5c04',
+ 'quality': u'\u670d\u52a1\u6001\u5ea6\u597d\uff0c\u4e0d\u673a\u8f66\uff0c\u5f88\u6e29\u67d4\uff0c\u5f00\u59cb\u4e4b\u540e\u7279\u522b\u4e3b\u52a8',
+ 'security': u'\u5b89\u5168\u56de\u6765',
+ 'shape': u'\u53ef\u7231\uff0c\u80f8\u5927',
+ 'title': 'title'}
+Fri, 05 May 2017 17:32:40 engine.py[line:240] DEBUG Crawled (200) <GET http://www.missweike2017.com/show.asp?id=73656> (referer: http://www.missweike2017.com/class.asp?page=1&typeid=4&areaid=301)
+Fri, 05 May 2017 17:32:40 logstats.py[line:48] INFO Crawled 45 pages (at 45 pages/min), scraped 33 items (at 33 items/min)
+Fri, 05 May 2017 17:32:40 scraper.py[line:158] ERROR Spider error processing <GET http://www.missweike2017.com/show.asp?id=73656> (referer: http://www.missweike2017.com/class.asp?page=1&typeid=4&areaid=301)
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\Jack\Desktop\tutorial\tutorial\spiders\dmoz_spider.py", line 56, in parse_item
+    age = trs[2].extract()
+  File "C:\Python27\lib\site-packages\parsel\selector.py", line 58, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range

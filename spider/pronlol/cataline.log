@@ -1,0 +1,1368 @@
+Fri, 05 May 2017 19:00:45 log.py[line:128] INFO Scrapy 1.3.3 started (bot: pronlol)
+Fri, 05 May 2017 19:00:45 log.py[line:131] INFO Overridden settings: {'NEWSPIDER_MODULE': 'pronlol.spiders', 'FEED_URI': 'items.json', 'CONCURRENT_REQUESTS': 20, 'SPIDER_MODULES': ['pronlol.spiders'], 'BOT_NAME': 'pronlol', 'ROBOTSTXT_OBEY': True, 'FEED_FORMAT': 'json', 'REDIRECT_ENABLED': False, 'DOWNLOAD_DELAY': 1}
+Fri, 05 May 2017 19:00:45 middleware.py[line:53] INFO Enabled extensions:
+['scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+Fri, 05 May 2017 19:00:45 middleware.py[line:53] INFO Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'pronlol.middlewares.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+Fri, 05 May 2017 19:00:45 middleware.py[line:53] INFO Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+Fri, 05 May 2017 19:00:45 middleware.py[line:53] INFO Enabled item pipelines:
+[]
+Fri, 05 May 2017 19:00:45 engine.py[line:258] INFO Spider opened
+Fri, 05 May 2017 19:00:45 logstats.py[line:48] INFO Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+Fri, 05 May 2017 19:00:45 telnet.py[line:60] DEBUG Telnet console listening on 127.0.0.1:6023
+Fri, 05 May 2017 19:00:46 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/robots.txt> (referer: None)
+Fri, 05 May 2017 19:00:47 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/class.php?cid=79&page=1> (referer: None)
+Fri, 05 May 2017 19:00:48 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/class.php?cid=79&page=2> (referer: None)
+Fri, 05 May 2017 19:00:48 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/class.php?cid=79&page=3> (referer: None)
+Fri, 05 May 2017 19:00:50 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/class.php?cid=79&page=4> (referer: None)
+Fri, 05 May 2017 19:00:51 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/class.php?cid=79&page=5> (referer: None)
+Fri, 05 May 2017 19:00:52 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/class.php?cid=29&page=1> (referer: None)
+Fri, 05 May 2017 19:00:53 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/class.php?cid=29&page=2> (referer: None)
+Fri, 05 May 2017 19:00:55 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/class.php?cid=29&page=3> (referer: None)
+Fri, 05 May 2017 19:00:55 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/class.php?cid=29&page=4> (referer: None)
+Fri, 05 May 2017 19:00:57 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/class.php?cid=29&page=5> (referer: None)
+Fri, 05 May 2017 19:00:58 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/class.php?cid=115&page=1> (referer: None)
+Fri, 05 May 2017 19:00:59 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/class.php?cid=115&page=2> (referer: None)
+Fri, 05 May 2017 19:01:01 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/class.php?cid=115&page=3> (referer: None)
+Fri, 05 May 2017 19:01:02 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/class.php?cid=115&page=4> (referer: None)
+Fri, 05 May 2017 19:01:03 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/class.php?cid=115&page=5> (referer: None)
+Fri, 05 May 2017 19:01:05 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/class.php?cid=115&page=6> (referer: None)
+Fri, 05 May 2017 19:01:06 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/class.php?cid=115&page=7> (referer: None)
+Fri, 05 May 2017 19:01:07 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/class.php?cid=115&page=8> (referer: None)
+Fri, 05 May 2017 19:01:09 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/class.php?cid=115&page=9> (referer: None)
+Fri, 05 May 2017 19:01:10 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/class.php?cid=115&page=10> (referer: None)
+Fri, 05 May 2017 19:01:11 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/class.php?cid=115&page=11> (referer: None)
+Fri, 05 May 2017 19:01:13 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=51353> (referer: http://www.1dav.com/class.php?cid=79&page=1)
+Fri, 05 May 2017 19:01:13 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=51353>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Appealing Rina Umemiya is in for a harsh porn show at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=appealing-rina-umemiya-is-in-for-a-harsh-porn-show-32404281&html5=1']}
+Fri, 05 May 2017 19:01:14 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=60684> (referer: http://www.1dav.com/class.php?cid=79&page=2)
+Fri, 05 May 2017 19:01:14 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=60684>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'young cheerleader ass fucking in yard at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=young-cheerleader-ass-fucking-in-yard-17729801&html5=1']}
+Fri, 05 May 2017 19:01:15 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=53538> (referer: http://www.1dav.com/class.php?cid=79&page=3)
+Fri, 05 May 2017 19:01:15 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=53538>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Two chicks toyed and fucked at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=two-chicks-toyed-and-fucked-33736381&html5=1']}
+Fri, 05 May 2017 19:01:17 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=60653> (referer: http://www.1dav.com/class.php?cid=79&page=4)
+Fri, 05 May 2017 19:01:17 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=60653>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Mixed Body Fluids And Deep Sex Anri Kawai at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=mixed-body-fluids-and-deep-sex-anri-kawai-33908171&html5=1']}
+Fri, 05 May 2017 19:01:18 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=60640> (referer: http://www.1dav.com/class.php?cid=79&page=5)
+Fri, 05 May 2017 19:01:18 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=60640>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'First date pleasures at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=first-date-pleasures-13304371&html5=1']}
+Fri, 05 May 2017 19:01:19 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=20511> (referer: http://www.1dav.com/class.php?cid=29&page=1)
+Fri, 05 May 2017 19:01:19 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=20511>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u56fd\u5185\u5065\u7f8e\u64cd\u7f8e\u5973\u5927\u80c6XXOO\u56db\u90e8(1)'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=7556/\u56fd\u5185\u5065\u7f8e\u64cd\u7f8e\u5973\u5927\u80c6xxoo\u56db\u90e8-1&html5=1']}
+Fri, 05 May 2017 19:01:20 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=20513> (referer: http://www.1dav.com/class.php?cid=29&page=2)
+Fri, 05 May 2017 19:01:20 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=20513>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u9152\u5e97\u9732\u8138\u5f3a\u64cd\u559d\u9189\u7684\u5973\u540c\u4e8b'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=7549/\u9152\u5e97\u9732\u8138\u5f3a\u64cd\u559d\u9189\u7684\u5973\u540c\u4e8b&html5=1']}
+Fri, 05 May 2017 19:01:22 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=20512> (referer: http://www.1dav.com/class.php?cid=29&page=3)
+Fri, 05 May 2017 19:01:22 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=20512>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u4e0e\u65b0\u6ce1\u7684\u5c11\u5987\u5728\u98ce\u666f\u79c0\u4e3d\u91ce\u5916\u91ce\u6218'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=7534/\u4e0e\u65b0\u6ce1\u7684\u5c11\u5987\u5728\u98ce\u666f\u79c0\u4e3d\u91ce\u5916\u91ce\u6218&html5=1']}
+Fri, 05 May 2017 19:01:23 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=20484> (referer: http://www.1dav.com/class.php?cid=29&page=4)
+Fri, 05 May 2017 19:01:23 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=20484>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u7ba1\u5bb6\u4e0e\u4fdd\u59c6\u56db\u4eba\u591aP \u7b2c2\u5e55'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=7518/\u7ba1\u5bb6\u4e0e\u4fdd\u59c6\u56db\u4eba\u591ap-\u7b2c2\u5e55&html5=1']}
+Fri, 05 May 2017 19:01:24 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=20460> (referer: http://www.1dav.com/class.php?cid=29&page=5)
+Fri, 05 May 2017 19:01:24 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=20460>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u97e9\u56fd\u8d85\u7ea7\u7c89\u5ae9\u7684\u5c0f\u59b9\u59b9\u534a\u88f8\u8bf1\u60d1 \u8ba9\u4f60\u6d41\u9f3b\u8840'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=7507/\u97e9\u56fd\u8d85\u7ea7\u7c89\u5ae9\u7684\u5c0f\u59b9\u59b9\u534a\u88f8\u8bf1\u60d1-\u8ba9\u4f60\u6d41\u9f3b\u8840&html5=1']}
+Fri, 05 May 2017 19:01:25 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71081> (referer: http://www.1dav.com/class.php?cid=115&page=1)
+Fri, 05 May 2017 19:01:25 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71081>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Blonde Pantyhose Babe Blows and Hammered In Office'],
+ 'videolink': [u'http://203.75.190.21/readg/7av.php?id=blonde-pantyhose-babe-blows-and-hammered-in-office-dYKd8ffaG47&html5=1']}
+Fri, 05 May 2017 19:01:27 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71051> (referer: http://www.1dav.com/class.php?cid=115&page=2)
+Fri, 05 May 2017 19:01:27 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71051>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Hentai Babe Unclothed Nailed Behind and Cum Covered Butt'],
+ 'videolink': [u'http://203.75.190.21/readg/7av.php?id=hentai-babe-unclothed-nailed-behind-and-cum-covered-butt-K65ZKmTsm9y&html5=1']}
+Fri, 05 May 2017 19:01:28 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=70985> (referer: http://www.1dav.com/class.php?cid=115&page=3)
+Fri, 05 May 2017 19:01:28 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=70985>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u7a81\u88ad\u6b63\u5728\u6d17\u6fa1\u7684\u5c0f\u5973\u513f'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=10306/\u7a81\u88ad\u6b63\u5728\u6d17\u6fa1\u7684\u5c0f\u5973\u513f&html5=1']}
+Fri, 05 May 2017 19:01:29 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71126> (referer: http://www.1dav.com/class.php?cid=115&page=4)
+Fri, 05 May 2017 19:01:30 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71126>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Hentai Cutie Gets Wrapped Up in Monster Tentacles'],
+ 'videolink': [u'http://203.75.190.21/readg/7av.php?id=hentai-cutie-gets-wrapped-up-in-monster-tentacles-Ooy2qkKl0Z3&html5=1']}
+Fri, 05 May 2017 19:01:30 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71077> (referer: http://www.1dav.com/class.php?cid=115&page=5)
+Fri, 05 May 2017 19:01:30 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71077>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Sweet and Sexy Teen Get Sucked By Her Partner'],
+ 'videolink': [u'http://203.75.190.21/readg/7av.php?id=sweet-and-sexy-teen-get-sucked-by-her-partner-N4cWnIQVmSd&html5=1']}
+Fri, 05 May 2017 19:01:32 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=60958> (referer: http://www.1dav.com/class.php?cid=115&page=6)
+Fri, 05 May 2017 19:01:32 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=60958>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u65f6\u95f4\u6682\u505c\u540e\u968f\u610f\u4fb5\u72af\u4f53\u64cd\u5973\u5b66\u751f 2'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=9863/\u65f6\u95f4\u6682\u505c\u540e\u968f\u610f\u4fb5\u72af\u4f53\u64cd\u5973\u5b66\u751f-2&html5=1']}
+Fri, 05 May 2017 19:01:33 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=70957> (referer: http://www.1dav.com/class.php?cid=115&page=7)
+Fri, 05 May 2017 19:01:33 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=70957>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Hot Busty Babe Gets Toilet Masturbation'],
+ 'videolink': [u'http://203.75.190.21/readg/7av.php?id=hot-busty-babe-gets-toilet-masturbation-am4hcLcJPf0&html5=1']}
+Fri, 05 May 2017 19:01:34 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=51135> (referer: http://www.1dav.com/class.php?cid=115&page=8)
+Fri, 05 May 2017 19:01:34 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=51135>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'female ninja ride on me  at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=female-ninja-ride-on-me-32240571&html5=1']}
+Fri, 05 May 2017 19:01:35 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=60469> (referer: http://www.1dav.com/class.php?cid=115&page=9)
+Fri, 05 May 2017 19:01:36 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=60469>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u5bb6\u5ead\u5185\u76f8\u59e6'],
+ 'videolink': [u'http://www.1dav.com/api/reade/e.php?id=/new/zw/2017-04/06/8d8c066d3ea']}
+Fri, 05 May 2017 19:01:37 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=58904> (referer: http://www.1dav.com/class.php?cid=115&page=10)
+Fri, 05 May 2017 19:01:37 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=58904>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'19\u5c81\u82b1\u5b63\u5c11\u5973\u5bb6\u4e2d\u88ab\u7236\u4eb2\u7684\u540c\u4e8b\u5f3a\u5978 \u5927\u547c\u4e0d\u8981'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=9552/19\u5c81\u82b1\u5b63\u5c11\u5973\u5bb6\u4e2d\u88ab\u7236\u4eb2\u7684\u540c\u4e8b\u5f3a\u5978-\u5927\u547c\u4e0d\u8981&html5=1']}
+Fri, 05 May 2017 19:01:38 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=59391> (referer: http://www.1dav.com/class.php?cid=115&page=11)
+Fri, 05 May 2017 19:01:38 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=59391>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'[\u6c34\u5c9b\u6d25\u5b9e]\u767d\u9886\u9753\u59b9\u62e5\u6324\u5730\u94c1\u88ab\u5f3a\u5978 \u7c98\u7a20\u7cbe\u6db2\u5c04\u4e86\u4e00\u5c41\u80a1'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=9672/\u6c34\u5c9b\u6d25\u5b9e-\u767d\u9886\u9753\u59b9\u62e5\u6324\u5730\u94c1\u88ab\u5f3a\u5978-\u7c98\u7a20\u7cbe\u6db2\u5c04\u4e86\u4e00\u5c41\u80a1&html5=1']}
+Fri, 05 May 2017 19:01:39 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=60952> (referer: http://www.1dav.com/class.php?cid=115&page=11)
+Fri, 05 May 2017 19:01:39 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=60952>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u5546\u4e1a\u5973\u95f4\u8c0d\u88ab\u5f3a\u5236\u4fb5\u72af'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=9848/\u5546\u4e1a\u5973\u95f4\u8c0d\u88ab\u5f3a\u5236\u4fb5\u72af&html5=1']}
+Fri, 05 May 2017 19:01:40 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=70958> (referer: http://www.1dav.com/class.php?cid=115&page=11)
+Fri, 05 May 2017 19:01:40 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=70958>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Skinny Bikini Brunette Babe Hairy Muff Finger and Kissing'],
+ 'videolink': [u'http://203.75.190.21/readg/7av.php?id=skinny-bikini-brunette-babe-hairy-muff-finger-and-kissing-ujog8Gb6XJ1&html5=1']}
+Fri, 05 May 2017 19:01:41 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=70993> (referer: http://www.1dav.com/class.php?cid=115&page=11)
+Fri, 05 May 2017 19:01:41 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=70993>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u70ba\u9ed1\u4eba\u7f8e\u7709\u4f86\u500b\u6df1\u5589\u53e3\u611b\u5427'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=10289/\u70ba\u9ed1\u4eba\u7f8e\u7709\u4f86\u500b\u6df1\u5589\u53e3\u611b\u5427&html5=1']}
+Fri, 05 May 2017 19:01:42 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=60838> (referer: http://www.1dav.com/class.php?cid=115&page=11)
+Fri, 05 May 2017 19:01:42 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=60838>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u521a\u4e0b\u98de\u673a\u7684\u7a7a\u59d0 \u5728\u5395\u6240\u88ab\u5e72'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=9717/\u521a\u4e0b\u98de\u673a\u7684\u7a7a\u59d0-\u5728\u5395\u6240\u88ab\u5e72&html5=1']}
+Fri, 05 May 2017 19:01:44 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=60938> (referer: http://www.1dav.com/class.php?cid=115&page=11)
+Fri, 05 May 2017 19:01:44 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=60938>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u8d81\u7236\u4eb2\u559d\u9189 \u52fe\u5f15\u4ed6\u4e0a\u5e8a\u7684\u5973\u513f'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=9842/\u8d81\u7236\u4eb2\u559d\u9189-\u52fe\u5f15\u4ed6\u4e0a\u5e8a\u7684\u5973\u513f&html5=1']}
+Fri, 05 May 2017 19:01:45 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=67663> (referer: http://www.1dav.com/class.php?cid=115&page=11)
+Fri, 05 May 2017 19:01:45 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=67663>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u7f8e\u4e3d\u7684\u540e\u5988'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=10245/\u7f8e\u4e3d\u7684\u540e\u5988&html5=1']}
+Fri, 05 May 2017 19:01:45 logstats.py[line:48] INFO Crawled 49 pages (at 49 pages/min), scraped 27 items (at 27 items/min)
+Fri, 05 May 2017 19:01:45 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=67850> (referer: http://www.1dav.com/class.php?cid=115&page=11)
+Fri, 05 May 2017 19:01:45 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=67850>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Naughty Hentai Chicks Rubbed Their Tight Cunts Indoor'],
+ 'videolink': [u'http://203.75.190.21/readg/7av.php?id=naughty-hentai-chicks-rubbed-their-tight-cunts-indoor-0SYLYQuVG9N&html5=1']}
+Fri, 05 May 2017 19:01:47 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=51018> (referer: http://www.1dav.com/class.php?cid=115&page=11)
+Fri, 05 May 2017 19:01:47 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=51018>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Shig fuck on bed at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=shig-fuck-on-bed-32107661&html5=1']}
+Fri, 05 May 2017 19:01:48 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71030> (referer: http://www.1dav.com/class.php?cid=115&page=11)
+Fri, 05 May 2017 19:01:48 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71030>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Baddest Bitch p1 at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=baddest-bitch-p1-33467671&html5=1']}
+Fri, 05 May 2017 19:01:49 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71042> (referer: http://www.1dav.com/class.php?cid=115&page=10)
+Fri, 05 May 2017 19:01:49 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71042>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Beautiful Sharon Lee fuck in kitchen at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=beautiful-sharon-lee-fuck-in-kitchen-33675401&html5=1']}
+Fri, 05 May 2017 19:01:51 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=68062> (referer: http://www.1dav.com/class.php?cid=115&page=10)
+Fri, 05 May 2017 19:01:51 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=68062>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u7b2c\u4e00\u6b21\u53bb\u5973\u670b\u53cb\u5bb6\u62dc\u8bbf \u5c31\u628a\u4e08\u6bcd\u5a18\u64cd\u4e86'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=10277/\u7b2c\u4e00\u6b21\u53bb\u5973\u670b\u53cb\u5bb6\u62dc\u8bbf-\u5c31\u628a\u4e08\u6bcd\u5a18\u64cd\u4e86&html5=1']}
+Fri, 05 May 2017 19:01:52 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=70995> (referer: http://www.1dav.com/class.php?cid=115&page=10)
+Fri, 05 May 2017 19:01:52 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=70995>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u4e3a\u516c\u516c\u53e3\u7206\u7684\u5927\u5976\u5ab3\u5987'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=10329/\u4e3a\u516c\u516c\u53e3\u7206\u7684\u5927\u5976\u5ab3\u5987&html5=1']}
+Fri, 05 May 2017 19:01:53 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=70925> (referer: http://www.1dav.com/class.php?cid=115&page=10)
+Fri, 05 May 2017 19:01:53 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=70925>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Horny Japanese model Ayami Syunka in Exotic college, couple JAV clip'],
+ 'videolink': [u'http://www.1dav.com/api/read8/tb.php?id=37817/horny-japanese-model-ayami-syunka-in-exotic-college-couple-jav-clip-473&html5=1']}
+Fri, 05 May 2017 19:01:54 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=12806> (referer: http://www.1dav.com/class.php?cid=115&page=10)
+Fri, 05 May 2017 19:01:54 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=12806>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u4e9a\u6d32\u60c5\u8272\u6700\u65b0\u4e1c\u4eac\u70edTokyo-Hot n1056\u9b3c\u901d - \u9ad8\u6865\u307e\u306a\u307f'],
+ 'videolink': [u'http://www.1dav.com/api/readd/avtb.php?id=131&html5=1']}
+Fri, 05 May 2017 19:01:55 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71080> (referer: http://www.1dav.com/class.php?cid=115&page=10)
+Fri, 05 May 2017 19:01:56 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71080>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Black Stocking Wore Cute Hentai Teen Blonde Chick Gives Fellatio Blowjob'],
+ 'videolink': [u'http://203.75.190.21/readg/7av.php?id=black-stocking-wore-cute-hentai-teen-blonde-chick-gives-fellatio-blowjob-YyyEV8dThQn&html5=1']}
+Fri, 05 May 2017 19:01:57 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71037> (referer: http://www.1dav.com/class.php?cid=115&page=10)
+Fri, 05 May 2017 19:01:57 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71037>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'So You Think You Can Twerk Too p5 at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=so-you-think-you-can-twerk-too-p5-35349131&html5=1']}
+Fri, 05 May 2017 19:01:58 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71070> (referer: http://www.1dav.com/class.php?cid=115&page=10)
+Fri, 05 May 2017 19:01:58 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71070>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u81ea\u6170\u5df2\u7ecf\u6ee1\u8db3\u4e0d\u4e86\u5979'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=10347/\u81ea\u6170\u5df2\u7ecf\u6ee1\u8db3\u4e0d\u4e86\u5979&html5=1']}
+Fri, 05 May 2017 19:01:59 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71019> (referer: http://www.1dav.com/class.php?cid=115&page=10)
+Fri, 05 May 2017 19:02:00 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71019>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u9965\u6e34\u7684\u4e61\u6751\u4eba\u59bb'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=10337/\u9965\u6e34\u7684\u4e61\u6751\u4eba\u59bb&html5=1']}
+Fri, 05 May 2017 19:02:01 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71069> (referer: http://www.1dav.com/class.php?cid=115&page=9)
+Fri, 05 May 2017 19:02:01 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71069>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u9b3c\u72362 REVENGE2'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=10359/\u9b3c\u72362-revenge2&html5=1']}
+Fri, 05 May 2017 19:02:02 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71074> (referer: http://www.1dav.com/class.php?cid=115&page=9)
+Fri, 05 May 2017 19:02:02 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71074>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u6027\u611f\u6e29\u67d4\u7684\u5c0f\u62a4\u58eb'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=10348/\u6027\u611f\u6e29\u67d4\u7684\u5c0f\u62a4\u58eb&html5=1']}
+Fri, 05 May 2017 19:02:03 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71045> (referer: http://www.1dav.com/class.php?cid=115&page=9)
+Fri, 05 May 2017 19:02:03 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71045>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Stunning Asian Beauty Love Her Vagina Rammed'],
+ 'videolink': [u'http://203.75.190.21/readg/7av.php?id=stunning-asian-beauty-love-her-vagina-rammed-j6zPl0RSLEU&html5=1']}
+Fri, 05 May 2017 19:02:04 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71032> (referer: http://www.1dav.com/class.php?cid=115&page=9)
+Fri, 05 May 2017 19:02:04 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71032>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u' Emi sex play at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=emi-sex-play-33417401&html5=1']}
+Fri, 05 May 2017 19:02:05 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=70945> (referer: http://www.1dav.com/class.php?cid=115&page=9)
+Fri, 05 May 2017 19:02:06 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=70945>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Best Japanese model Tsubomi in Horny JAV censored Creampie, Hairy video'],
+ 'videolink': [u'http://www.1dav.com/api/read8/tb.php?id=18427/best-japanese-model-tsubomi-in-horny-jav-censored-creampie-hairy-video&html5=1']}
+Fri, 05 May 2017 19:02:07 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71072> (referer: http://www.1dav.com/class.php?cid=115&page=9)
+Fri, 05 May 2017 19:02:07 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71072>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u9b3c\u72362 REVENG 1'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=10360/\u9b3c\u72362-reveng-1&html5=1']}
+Fri, 05 May 2017 19:02:08 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=70963> (referer: http://www.1dav.com/class.php?cid=115&page=9)
+Fri, 05 May 2017 19:02:08 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=70963>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u76ae\u97ad\u76ae\u8863 \u9ad8\u50b2\u7684\u5973\u738b'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=10279/\u76ae\u97ad\u76ae\u8863-\u9ad8\u50b2\u7684\u5973\u738b&html5=1']}
+Fri, 05 May 2017 19:02:09 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71004> (referer: http://www.1dav.com/class.php?cid=115&page=9)
+Fri, 05 May 2017 19:02:09 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71004>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u50cf\u516c\u516c\u5f00\u653e\u81ea\u5df1\u7684\u8089\u4f53'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=10332/\u50cf\u516c\u516c\u5f00\u653e\u81ea\u5df1\u7684\u8089\u4f53&html5=1']}
+Fri, 05 May 2017 19:02:10 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71119> (referer: http://www.1dav.com/class.php?cid=115&page=9)
+Fri, 05 May 2017 19:02:11 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71119>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Heidi Ho is bridging the Asian black divide at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=heidi-ho-is-bridging-the-asian-black-divide-30700311&html5=1']}
+Fri, 05 May 2017 19:02:12 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=11445> (referer: http://www.1dav.com/class.php?cid=115&page=8)
+Fri, 05 May 2017 19:02:12 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=11445>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Asian bimbo with medium size boobs getting fucked hard'],
+ 'videolink': [u'http://www.1dav.com/api/readc/j.php?id=2612113&html5=1']}
+Fri, 05 May 2017 19:02:13 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71082> (referer: http://www.1dav.com/class.php?cid=115&page=8)
+Fri, 05 May 2017 19:02:13 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71082>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Japanese Babe Fucked Hard by Hunky Dude after Undress'],
+ 'videolink': [u'http://203.75.190.21/readg/7av.php?id=japanese-babe-fucked-hard-by-hunky-dude-after-undress-N0uMiTsaqyL&html5=1']}
+Fri, 05 May 2017 19:02:14 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=70989> (referer: http://www.1dav.com/class.php?cid=115&page=8)
+Fri, 05 May 2017 19:02:15 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=70989>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u53d1\u73b0\u6bcd\u4eb2\u5077\u60c5\u540e\u7684\u513f\u5b50'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=10317/\u53d1\u73b0\u6bcd\u4eb2\u5077\u60c5\u540e\u7684\u513f\u5b50&html5=1']}
+Fri, 05 May 2017 19:02:15 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71116> (referer: http://www.1dav.com/class.php?cid=115&page=8)
+Fri, 05 May 2017 19:02:16 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71116>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Lady Sniper cam show at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=lady-sniper-cam-show-28676451&html5=1']}
+Fri, 05 May 2017 19:02:17 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71033> (referer: http://www.1dav.com/class.php?cid=115&page=8)
+Fri, 05 May 2017 19:02:17 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71033>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Exotic Japanese model Ryu Enami in Horny JAV uncensored Dildos/Toys clip at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=exotic-japanese-model-ryu-enami-in-horny-jav-uncensored-dildos%2ftoys-clip-38464581&html5=1']}
+Fri, 05 May 2017 19:02:18 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=9193> (referer: http://www.1dav.com/class.php?cid=115&page=8)
+Fri, 05 May 2017 19:02:18 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=9193>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Horny Asian Tarts Share A Dribbling Bone'],
+ 'videolink': [u'http://www.1dav.com/api/readc/j.php?id=967&html5=1']}
+Fri, 05 May 2017 19:02:19 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=70978> (referer: http://www.1dav.com/class.php?cid=115&page=8)
+Fri, 05 May 2017 19:02:19 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=70978>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u5168\u5bb6\u90fd\u53ef\u4ee5\u968f\u4fbf\u73a9\u7684\u5973\u4eba'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=10284/\u5168\u5bb6\u90fd\u53ef\u4ee5\u968f\u4fbf\u73a9\u7684\u5973\u4eba&html5=1']}
+Fri, 05 May 2017 19:02:21 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71046> (referer: http://www.1dav.com/class.php?cid=115&page=8)
+Fri, 05 May 2017 19:02:21 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71046>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Red Headed Babe Shows Her Milky Boobs with Huge Excitement'],
+ 'videolink': [u'http://203.75.190.21/readg/7av.php?id=red-headed-babe-shows-her-milky-boobs-with-huge-excitement-jjhTUJ98SEk&html5=1']}
+Fri, 05 May 2017 19:02:22 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71078> (referer: http://www.1dav.com/class.php?cid=115&page=8)
+Fri, 05 May 2017 19:02:22 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71078>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Hot Stunning Hentai Chick Showing Her Massive Tits'],
+ 'videolink': [u'http://203.75.190.21/readg/7av.php?id=hot-stunning-hentai-chick-showing-her-massive-tits-T3Wgwoy16Ve&html5=1']}
+Fri, 05 May 2017 19:02:23 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=70975> (referer: http://www.1dav.com/class.php?cid=115&page=7)
+Fri, 05 May 2017 19:02:23 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=70975>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u8d81\u7740\u5988\u5988\u548c\u59d0\u59d0\u7761\u7740 \u8fdb\u884c\u4fb5\u72af'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=10283/\u8d81\u7740\u5988\u5988\u548c\u59d0\u59d0\u7761\u7740-\u8fdb\u884c\u4fb5\u72af&html5=1']}
+Fri, 05 May 2017 19:02:24 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71005> (referer: http://www.1dav.com/class.php?cid=115&page=7)
+Fri, 05 May 2017 19:02:24 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71005>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u6027\u611f\u7684\u957f\u817f\u5973\u738b\u6f14\u7ece\u4e56\u5de7\u5973\u4ec6'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=10323/\u6027\u611f\u7684\u957f\u817f\u5973\u738b\u6f14\u7ece\u4e56\u5de7\u5973\u4ec6&html5=1']}
+Fri, 05 May 2017 19:02:26 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71050> (referer: http://www.1dav.com/class.php?cid=115&page=7)
+Fri, 05 May 2017 19:02:26 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71050>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Redhead Huge Boob Anime Flashes Goods and Fondle Over Panty'],
+ 'videolink': [u'http://203.75.190.21/readg/7av.php?id=redhead-huge-boob-anime-flashes-goods-and-fondle-over-panty-f2hY4cZgaf1&html5=1']}
+Fri, 05 May 2017 19:02:27 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=14071> (referer: http://www.1dav.com/class.php?cid=115&page=7)
+Fri, 05 May 2017 19:02:27 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=14071>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u4e9a\u6d32\u60c5\u8272\u6700\u65b0heyzo0908\u541b\u5c9b\u30a2\u30f3\u30ca\u3010\u304d\u307f\u3058\u307e\u3042\u3093\u306a\u3011 \u30bb\u30ec\u30d6\u306a\u30a2\u30f3\u30ca\u3092\u601d\u3044\u306e\u307e\u307e\u306b'],
+ 'videolink': [u'http://www.1dav.com/api/readd/avtb.php?id=893&html5=1']}
+Fri, 05 May 2017 19:02:28 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=59369> (referer: http://www.1dav.com/class.php?cid=115&page=7)
+Fri, 05 May 2017 19:02:28 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=59369>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u4e2d\u5b57\u5267\u60c5\u7247: \u5165\u5ba4\u5f3a\u5978\u8001\u516c\u4e0d\u5728\u5bb6\u7684\u4e0a\u6d77\u5c11\u5987'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=9658/\u4e2d\u5b57\u5267\u60c5\u7247-\u5165\u5ba4\u5f3a\u5978\u8001\u516c\u4e0d\u5728\u5bb6\u7684\u4e0a\u6d77\u5c11\u5987&html5=1']}
+Fri, 05 May 2017 19:02:30 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71071> (referer: http://www.1dav.com/class.php?cid=115&page=7)
+Fri, 05 May 2017 19:02:30 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71071>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u5916\u56fd\u599e \u73a9\u7684\u5c31\u662f\u6fc0\u70c8 \u540c\u6027 SM \u5404\u79cd\u6fc0\u60c5'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=10357/\u5916\u56fd\u599e-\u73a9\u7684\u5c31\u662f\u6fc0\u70c8-\u540c\u6027-sm-\u5404\u79cd\u6fc0\u60c5&html5=1']}
+Fri, 05 May 2017 19:02:31 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71003> (referer: http://www.1dav.com/class.php?cid=115&page=7)
+Fri, 05 May 2017 19:02:31 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71003>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u6d17\u6fa1\u6642\u8981\u5f9e\u5f8c\u63d2\u5165'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=10292/\u6d17\u6fa1\u6642\u8981\u5f9e\u5f8c\u63d2\u5165&html5=1']}
+Fri, 05 May 2017 19:02:33 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71064> (referer: http://www.1dav.com/class.php?cid=115&page=7)
+Fri, 05 May 2017 19:02:33 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71064>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u6deb\u8361\u7684\u4eba\u59bb\u662f\u5168\u5bb6\u4eba\u7684\u6027\u73a9\u7269'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=10354/\u6deb\u8361\u7684\u4eba\u59bb\u662f\u5168\u5bb6\u4eba\u7684\u6027\u73a9\u7269&html5=1']}
+Fri, 05 May 2017 19:02:33 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71001> (referer: http://www.1dav.com/class.php?cid=115&page=7)
+Fri, 05 May 2017 19:02:34 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71001>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'OL\u7269\u8bed'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=10331/ol\u7269\u8bed&html5=1']}
+Fri, 05 May 2017 19:02:35 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=8827> (referer: http://www.1dav.com/class.php?cid=115&page=6)
+Fri, 05 May 2017 19:02:35 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=8827>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Boys get aroused as they spy on the masturbating Asian babe'],
+ 'videolink': [u'http://www.1dav.com/api/readc/j.php?id=2512557&html5=1']}
+Fri, 05 May 2017 19:02:36 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71039> (referer: http://www.1dav.com/class.php?cid=115&page=6)
+Fri, 05 May 2017 19:02:36 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71039>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Hottest Japanese Model Alice Ozawa  at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=hottest-japanese-model-alice-ozawa-34421941&html5=1']}
+Fri, 05 May 2017 19:02:38 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71079> (referer: http://www.1dav.com/class.php?cid=115&page=6)
+Fri, 05 May 2017 19:02:38 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71079>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Red Pant Chick Group Blows and Hammered For Creampie Action'],
+ 'videolink': [u'http://203.75.190.21/readg/7av.php?id=red-pant-chick-group-blows-and-hammered-for-creampie-action-ZXiofwKx85v&html5=1']}
+Fri, 05 May 2017 19:02:39 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71061> (referer: http://www.1dav.com/class.php?cid=115&page=6)
+Fri, 05 May 2017 19:02:39 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71061>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u9965\u6e34\u4eba\u59bb\u7684\u6e29\u6cc9\u4e4b\u65c5'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=10343/\u9965\u6e34\u4eba\u59bb\u7684\u6e29\u6cc9\u4e4b\u65c5&html5=1']}
+Fri, 05 May 2017 19:02:40 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71040> (referer: http://www.1dav.com/class.php?cid=115&page=6)
+Fri, 05 May 2017 19:02:40 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71040>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Marie Filipino Amateur Teen Does The Best Deep Throat In PI Extraordinary Throat at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=marie-filipino-amateur-teen-does-the-best-deep-throat-in-pi-extraordinary-throat-32585221&html5=1']}
+Fri, 05 May 2017 19:02:42 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=70996> (referer: http://www.1dav.com/class.php?cid=115&page=6)
+Fri, 05 May 2017 19:02:42 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=70996>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u559c\u6b22\u548c\u4e08\u592b \u7236\u4eb2\u4e00\u8d77\u73a9'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=10320/\u559c\u6b22\u548c\u4e08\u592b-\u7236\u4eb2\u4e00\u8d77\u73a9&html5=1']}
+Fri, 05 May 2017 19:02:43 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=70959> (referer: http://www.1dav.com/class.php?cid=115&page=6)
+Fri, 05 May 2017 19:02:43 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=70959>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Busty Hentai Strips Dress for Fucking Activity'],
+ 'videolink': [u'http://203.75.190.21/readg/7av.php?id=busty-hentai-strips-dress-for-fucking-activity-NtbMYV3kGpm&html5=1']}
+Fri, 05 May 2017 19:02:44 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=60837> (referer: http://www.1dav.com/class.php?cid=115&page=6)
+Fri, 05 May 2017 19:02:44 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=60837>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u4e1d\u889c\u5c0f\u5973\u53cb\u53c8\u53eb\u53c8\u723d-\u56fd\u8bed\u5bf9\u767d'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=9726/\u4e1d\u889c\u5c0f\u5973\u53cb\u53c8\u53eb\u53c8\u723d-\u56fd\u8bed\u5bf9\u767d&html5=1']}
+Fri, 05 May 2017 19:02:44 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71041> (referer: http://www.1dav.com/class.php?cid=115&page=6)
+Fri, 05 May 2017 19:02:44 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71041>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'The real exercise at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=the-real-exercise-34139541&html5=1']}
+Fri, 05 May 2017 19:02:45 logstats.py[line:48] INFO Crawled 97 pages (at 48 pages/min), scraped 75 items (at 48 items/min)
+Fri, 05 May 2017 19:02:46 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=70942> (referer: http://www.1dav.com/class.php?cid=115&page=5)
+Fri, 05 May 2017 19:02:46 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=70942>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Nana Komaki in Fascinating Recruit Of Young Wife 149 part 3'],
+ 'videolink': [u'http://www.1dav.com/api/read8/tb.php?id=30244/nana-komaki-in-fascinating-recruit-of-young-wife-149-part-3&html5=1']}
+Fri, 05 May 2017 19:02:47 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=67661> (referer: http://www.1dav.com/class.php?cid=115&page=5)
+Fri, 05 May 2017 19:02:47 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=67661>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u548c\u54e5\u54e5\u6709\u7279\u6b8a\u5173\u7cfb\u7684\u59b9\u59b9'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=10225/\u548c\u54e5\u54e5\u6709\u7279\u6b8a\u5173\u7cfb\u7684\u59b9\u59b9&html5=1']}
+Fri, 05 May 2017 19:02:48 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=47389> (referer: http://www.1dav.com/class.php?cid=115&page=5)
+Fri, 05 May 2017 19:02:48 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=47389>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Interracial Gang Bang Ends Up All Sticky'],
+ 'videolink': [u'http://www.1dav.com/api/readc/j.php?id=8564&html5=1']}
+Fri, 05 May 2017 19:02:50 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71047> (referer: http://www.1dav.com/class.php?cid=115&page=5)
+Fri, 05 May 2017 19:02:50 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71047>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Gorgeous Brunette Babe Gives Massage to a Naughty Guy'],
+ 'videolink': [u'http://203.75.190.21/readg/7av.php?id=gorgeous-brunette-babe-gives-massage-to-a-naughty-guy-mYRgRHllexd&html5=1']}
+Fri, 05 May 2017 19:02:51 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71021> (referer: http://www.1dav.com/class.php?cid=115&page=5)
+Fri, 05 May 2017 19:02:51 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71021>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u7ed9\u5f1f\u5f1f\u6d17\u6fa1\u7684\u6f02\u4eae\u59d0\u59d0'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=10298/\u7ed9\u5f1f\u5f1f\u6d17\u6fa1\u7684\u6f02\u4eae\u59d0\u59d0&html5=1']}
+Fri, 05 May 2017 19:02:52 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71120> (referer: http://www.1dav.com/class.php?cid=115&page=5)
+Fri, 05 May 2017 19:02:52 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71120>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'China Dahl and her midget gilfriend get to play with a black cock at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=china-dahl-and-her-midget-gilfriend-get-to-play-with-a-black-cock-28577171&html5=1']}
+Fri, 05 May 2017 19:02:53 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71000> (referer: http://www.1dav.com/class.php?cid=115&page=5)
+Fri, 05 May 2017 19:02:53 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71000>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u5077\u60c5\u9965\u6e34\u7684\u513f\u5ab3\u5987'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=10291/\u5077\u60c5\u9965\u6e34\u7684\u513f\u5ab3\u5987&html5=1']}
+Fri, 05 May 2017 19:02:54 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=70967> (referer: http://www.1dav.com/class.php?cid=115&page=5)
+Fri, 05 May 2017 19:02:55 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=70967>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u5de8\u4e73\u5973\u72ac \u7537\u4e3b\u4eba\u7684\u798f\u97f3'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=10300/\u5de8\u4e73\u5973\u72ac-\u7537\u4e3b\u4eba\u7684\u798f\u97f3&html5=1']}
+Fri, 05 May 2017 19:02:56 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=70998> (referer: http://www.1dav.com/class.php?cid=115&page=5)
+Fri, 05 May 2017 19:02:56 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=70998>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u88ab\u56da\u7981\u7684\u4eba\u59bb'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=10330/\u88ab\u56da\u7981\u7684\u4eba\u59bb&html5=1']}
+Fri, 05 May 2017 19:02:57 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71122> (referer: http://www.1dav.com/class.php?cid=115&page=4)
+Fri, 05 May 2017 19:02:57 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71122>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'young wife get fuck at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=young-wife-get-fuck-27882872&html5=1']}
+Fri, 05 May 2017 19:02:59 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71073> (referer: http://www.1dav.com/class.php?cid=115&page=4)
+Fri, 05 May 2017 19:02:59 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71073>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u56fd\u4ea7\u5c0f\u9a9a\u903c \u5bf9\u7740\u6444\u50cf\u5934\u4e0d\u505c\u7684\u6263\u7a74'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=10358/\u56fd\u4ea7\u5c0f\u9a9a\u903c-\u5bf9\u7740\u6444\u50cf\u5934\u4e0d\u505c\u7684\u6263\u7a74&html5=1']}
+Fri, 05 May 2017 19:03:00 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=67866> (referer: http://www.1dav.com/class.php?cid=115&page=4)
+Fri, 05 May 2017 19:03:00 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=67866>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Sexy Young Japanese Babe Peeing Alone in Back Side of Apartment'],
+ 'videolink': [u'http://203.75.190.21/readg/7av.php?id=sexy-young-japanese-babe-peeing-alone-in-back-side-of-apartment-WdSxJNyILWZ&html5=1']}
+Fri, 05 May 2017 19:03:01 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=70946> (referer: http://www.1dav.com/class.php?cid=115&page=4)
+Fri, 05 May 2017 19:03:02 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=70946>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Crazy Japanese model Aozora Yamakawa in Fabulous gangbang, bus JAV clip'],
+ 'videolink': [u'http://www.1dav.com/api/read8/tb.php?id=33499/crazy-japanese-model-aozora-yamakawa-in-fabulous-gangbang-bus-jav-clip-128&html5=1']}
+Fri, 05 May 2017 19:03:03 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=70962> (referer: http://www.1dav.com/class.php?cid=115&page=4)
+Fri, 05 May 2017 19:03:03 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=70962>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Sweet Babe Masturbating Herself by a Huge Vibrator'],
+ 'videolink': [u'http://203.75.190.21/readg/7av.php?id=sweet-babe-masturbating-herself-by-a-huge-vibrator-aOFg5x4zEZx&html5=1']}
+Fri, 05 May 2017 19:03:03 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71052> (referer: http://www.1dav.com/class.php?cid=115&page=4)
+Fri, 05 May 2017 19:03:03 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71052>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Redhead Animated Babe Suck Two Dicks and Squeeze Boob'],
+ 'videolink': [u'http://203.75.190.21/readg/7av.php?id=redhead-animated-babe-suck-two-dicks-and-squeeze-boob-S7S5PygGVaa&html5=1']}
+Fri, 05 May 2017 19:03:05 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71055> (referer: http://www.1dav.com/class.php?cid=115&page=4)
+Fri, 05 May 2017 19:03:05 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71055>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u6f02\u4eae\u7684\u56db\u6735\u73ed\u82b1 \u591a\u4eba\u6027\u7231\u5927\u4e71\u4ea4'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=10340/\u6f02\u4eae\u7684\u56db\u6735\u73ed\u82b1-\u591a\u4eba\u6027\u7231\u5927\u4e71\u4ea4&html5=1']}
+Fri, 05 May 2017 19:03:06 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71048> (referer: http://www.1dav.com/class.php?cid=115&page=4)
+Fri, 05 May 2017 19:03:06 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71048>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Huge Titted Babe Gets Slammed By an Oldman at Outdoor'],
+ 'videolink': [u'http://203.75.190.21/readg/7av.php?id=huge-titted-babe-gets-slammed-by-an-oldman-at-outdoor-4Ja8u9uHGJg&html5=1']}
+Fri, 05 May 2017 19:03:07 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71066> (referer: http://www.1dav.com/class.php?cid=115&page=4)
+Fri, 05 May 2017 19:03:07 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71066>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u5728\u65e5\u672c \u5ab3\u5987\u513f\u5c31\u662f\u516c\u516c\u548c\u8001\u516c\u4e24\u4e2a\u4eba\u516c\u7528\u7684'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=10355/\u5728\u65e5\u672c-\u5ab3\u5987\u513f\u5c31\u662f\u516c\u516c\u548c\u8001\u516c\u4e24\u4e2a\u4eba\u516c\u7528\u7684&html5=1']}
+Fri, 05 May 2017 19:03:08 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=70965> (referer: http://www.1dav.com/class.php?cid=115&page=3)
+Fri, 05 May 2017 19:03:08 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=70965>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u5de8\u4e73\u4eba\u59bb\u7684\u9ad8\u8d85\u6027\u6280\u5de7'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=10309/\u5de8\u4e73\u4eba\u59bb\u7684\u9ad8\u8d85\u6027\u6280\u5de7&html5=1']}
+Fri, 05 May 2017 19:03:10 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71060> (referer: http://www.1dav.com/class.php?cid=115&page=3)
+Fri, 05 May 2017 19:03:10 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71060>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u9ed1\u4e1d\u5236\u670d \u8fd9\u79cd\u599e\u73a9\u8d77\u6765\u7279\u522b\u723d'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=10352/\u9ed1\u4e1d\u5236\u670d-\u8fd9\u79cd\u599e\u73a9\u8d77\u6765\u7279\u522b\u723d&html5=1']}
+Fri, 05 May 2017 19:03:11 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71063> (referer: http://www.1dav.com/class.php?cid=115&page=3)
+Fri, 05 May 2017 19:03:11 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71063>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u6e05\u7eaf\u7684\u73ed\u82b1 \u6781\u81f4\u8bf1\u60d1'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=10344/\u6e05\u7eaf\u7684\u73ed\u82b1-\u6781\u81f4\u8bf1\u60d1&html5=1']}
+Fri, 05 May 2017 19:03:12 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71009> (referer: http://www.1dav.com/class.php?cid=115&page=3)
+Fri, 05 May 2017 19:03:12 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71009>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u65e5\u672c\u7684\u7236\u5973\u4e3e\u724c\u4e71\u4f26'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=10294/\u65e5\u672c\u7684\u7236\u5973\u4e3e\u724c\u4e71\u4f26&html5=1']}
+Fri, 05 May 2017 19:03:14 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71038> (referer: http://www.1dav.com/class.php?cid=115&page=3)
+Fri, 05 May 2017 19:03:14 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71038>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Kimiko Sama at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=kimiko-sama-32598251&html5=1']}
+Fri, 05 May 2017 19:03:15 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71121> (referer: http://www.1dav.com/class.php?cid=115&page=3)
+Fri, 05 May 2017 19:03:15 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71121>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'asian sex teacher shows 3 virgins how to fuck at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=asian-sex-teacher-shows-3-virgins-how-to-fuck-25980051&html5=1']}
+Fri, 05 May 2017 19:03:16 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=70968> (referer: http://www.1dav.com/class.php?cid=115&page=3)
+Fri, 05 May 2017 19:03:17 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=70968>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u7761\u89c9\u524d\u548c\u5ab3\u5987\u6765\u4e00\u70ae'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=10310/\u7761\u89c9\u524d\u548c\u5ab3\u5987\u6765\u4e00\u70ae&html5=1']}
+Fri, 05 May 2017 19:03:18 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71011> (referer: http://www.1dav.com/class.php?cid=115&page=3)
+Fri, 05 May 2017 19:03:18 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71011>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u4e3a\u516c\u516c\u64e6\u8eab\u7684\u513f\u5ab3\u5987'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=10325/\u4e3a\u516c\u516c\u64e6\u8eab\u7684\u513f\u5ab3\u5987&html5=1']}
+Fri, 05 May 2017 19:03:19 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71062> (referer: http://www.1dav.com/class.php?cid=115&page=3)
+Fri, 05 May 2017 19:03:19 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71062>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u771f\u7684\u8981\u63d2\u5979\u4e00\u767e\u6b21\u624d\u53ef\u6eff\u8db3'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=10353/\u771f\u7684\u8981\u63d2\u5979\u4e00\u767e\u6b21\u624d\u53ef\u6eff\u8db3&html5=1']}
+Fri, 05 May 2017 19:03:20 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71125> (referer: http://www.1dav.com/class.php?cid=115&page=2)
+Fri, 05 May 2017 19:03:20 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71125>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Sweet and Sexy Hentai Girl in Rubbing Action'],
+ 'videolink': [u'http://203.75.190.21/readg/7av.php?id=sweet-and-sexy-hentai-girl-in-rubbing-action-6LiokHoeTZz&html5=1']}
+Fri, 05 May 2017 19:03:21 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71043> (referer: http://www.1dav.com/class.php?cid=115&page=2)
+Fri, 05 May 2017 19:03:21 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71043>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'sweet Aika fuck on bed at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=sweet-aika-fuck-on-bed-32200831&html5=1']}
+Fri, 05 May 2017 19:03:23 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71002> (referer: http://www.1dav.com/class.php?cid=115&page=2)
+Fri, 05 May 2017 19:03:23 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71002>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u8d24\u60e0\u7684\u4eba\u59bb\u662f\u5bb6\u4eba\u7684\u73a9\u7269'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=10322/\u8d24\u60e0\u7684\u4eba\u59bb\u662f\u5bb6\u4eba\u7684\u73a9\u7269&html5=1']}
+Fri, 05 May 2017 19:03:24 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71057> (referer: http://www.1dav.com/class.php?cid=115&page=2)
+Fri, 05 May 2017 19:03:24 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71057>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u548c\u9965\u6e34\u7684\u6bcd\u4eb2\u4e71\u4f26'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=10341/\u548c\u9965\u6e34\u7684\u6bcd\u4eb2\u4e71\u4f26&html5=1']}
+Fri, 05 May 2017 19:03:25 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71059> (referer: http://www.1dav.com/class.php?cid=115&page=2)
+Fri, 05 May 2017 19:03:25 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71059>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u79c0\u51fa\u81ea\u5df1\u6fd5\u6fd5\u7684\u5167\u8932\u5427'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=10342/\u79c0\u51fa\u81ea\u5df1\u6fd5\u6fd5\u7684\u5167\u8932\u5427&html5=1']}
+Fri, 05 May 2017 19:03:26 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71123> (referer: http://www.1dav.com/class.php?cid=115&page=2)
+Fri, 05 May 2017 19:03:26 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71123>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Glam asian model jerks cock and sucks balls'],
+ 'videolink': [u'http://www.1dav.com/api/readc/j.php?id=2884483&html5=1']}
+Fri, 05 May 2017 19:03:28 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71127> (referer: http://www.1dav.com/class.php?cid=115&page=2)
+Fri, 05 May 2017 19:03:28 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71127>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Sexy Anime Chick Hammered Hard Outdoor By Tentacles'],
+ 'videolink': [u'http://203.75.190.21/readg/7av.php?id=sexy-anime-chick-hammered-hard-outdoor-by-tentacles-HM1bST6cvTl&html5=1']}
+Fri, 05 May 2017 19:03:29 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=51125> (referer: http://www.1dav.com/class.php?cid=115&page=2)
+Fri, 05 May 2017 19:03:29 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=51125>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Aya fun on bed at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=aya-fun-on-bed-32287001&html5=1']}
+Fri, 05 May 2017 19:03:30 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71058> (referer: http://www.1dav.com/class.php?cid=115&page=2)
+Fri, 05 May 2017 19:03:30 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71058>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u4e0d\u7231\u7537\u4eba\u7684\u59d0\u59b9\u82b1'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=10351/\u4e0d\u7231\u7537\u4eba\u7684\u59d0\u59b9\u82b1&html5=1']}
+Fri, 05 May 2017 19:03:31 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=70972> (referer: http://www.1dav.com/class.php?cid=115&page=1)
+Fri, 05 May 2017 19:03:31 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=70972>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u8d81\u7740\u7236\u4eb2\u4e0a\u73ed \u63d2\u5165\u540e\u5988\u4f53\u5185'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=10282/\u8d81\u7740\u7236\u4eb2\u4e0a\u73ed-\u63d2\u5165\u540e\u5988\u4f53\u5185&html5=1']}
+Fri, 05 May 2017 19:03:32 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71049> (referer: http://www.1dav.com/class.php?cid=115&page=1)
+Fri, 05 May 2017 19:03:32 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71049>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Saggy Twat Teen Unclothed Sixty Nine and Fuck in Closed Room'],
+ 'videolink': [u'http://203.75.190.21/readg/7av.php?id=saggy-twat-teen-unclothed-sixty-nine-and-fuck-in-closed-room-QzOWVF1fuK8&html5=1']}
+Fri, 05 May 2017 19:03:33 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71124> (referer: http://www.1dav.com/class.php?cid=115&page=1)
+Fri, 05 May 2017 19:03:33 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71124>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Sweet Naked Couple Get Massive Nailed Each Other'],
+ 'videolink': [u'http://203.75.190.21/readg/7av.php?id=sweet-naked-couple-get-massive-nailed-each-other-aLbqVdLn47x&html5=1']}
+Fri, 05 May 2017 19:03:34 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71056> (referer: http://www.1dav.com/class.php?cid=115&page=1)
+Fri, 05 May 2017 19:03:35 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71056>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u539f\u6765\u4e0a\u5b66\u53ef\u4ee5\u90a3\u4e48\u7f8e\u597d'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=10350/\u539f\u6765\u4e0a\u5b66\u53ef\u4ee5\u90a3\u4e48\u7f8e\u597d&html5=1']}
+Fri, 05 May 2017 19:03:36 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=70964> (referer: http://www.1dav.com/class.php?cid=115&page=1)
+Fri, 05 May 2017 19:03:36 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=70964>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u88ab\u4e08\u592b\u7684\u7236\u4eb2\u4fb5\u72af'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=10299/\u88ab\u4e08\u592b\u7684\u7236\u4eb2\u4fb5\u72af&html5=1']}
+Fri, 05 May 2017 19:03:37 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71006> (referer: http://www.1dav.com/class.php?cid=115&page=1)
+Fri, 05 May 2017 19:03:37 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71006>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u73a9\u5f04\u81ea\u5df1\u7684\u5c0f\u4f84\u5973'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=10293/\u73a9\u5f04\u81ea\u5df1\u7684\u5c0f\u4f84\u5973&html5=1']}
+Fri, 05 May 2017 19:03:38 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71053> (referer: http://www.1dav.com/class.php?cid=115&page=1)
+Fri, 05 May 2017 19:03:39 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71053>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u5b66\u59b9\u7684\u8089\u4f53\u662f\u8001\u5e08\u548c\u5b66\u957f\u7684\u6700\u7231'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=10339/\u5b66\u59b9\u7684\u8089\u4f53\u662f\u8001\u5e08\u548c\u5b66\u957f\u7684\u6700\u7231&html5=1']}
+Fri, 05 May 2017 19:03:39 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71044> (referer: http://www.1dav.com/class.php?cid=115&page=1)
+Fri, 05 May 2017 19:03:40 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71044>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'slutty jap chick mouth fuck at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=slutty-jap-chick-mouth-fuck-32280631&html5=1']}
+Fri, 05 May 2017 19:03:40 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71054> (referer: http://www.1dav.com/class.php?cid=115&page=1)
+Fri, 05 May 2017 19:03:41 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71054>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u5728\u65e5\u672c \u5ab3\u5987\u513f\u5c31\u662f\u516c\u516c\u548c\u8001\u516c\u4e24\u4e2a\u4eba\u516c\u7528\u7684 2'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=10349/\u5728\u65e5\u672c-\u5ab3\u5987\u513f\u5c31\u662f\u516c\u516c\u548c\u8001\u516c\u4e24\u4e2a\u4eba\u516c\u7528\u7684-2&html5=1']}
+Fri, 05 May 2017 19:03:42 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=20457> (referer: http://www.1dav.com/class.php?cid=29&page=5)
+Fri, 05 May 2017 19:03:42 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=20457>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u539f\u5473\u5185\u88e4-\u88ab\u5c0f\u4fbf\u6d78\u6e7f\u540e\u7684\u8bf1\u60d1'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=7508/\u539f\u5473\u5185\u88e4-\u88ab\u5c0f\u4fbf\u6d78\u6e7f\u540e\u7684\u8bf1\u60d1&html5=1']}
+Fri, 05 May 2017 19:03:43 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=20479> (referer: http://www.1dav.com/class.php?cid=29&page=5)
+Fri, 05 May 2017 19:03:43 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=20479>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u65e0\u5e95\u7ebf\u591a\u4eba\u5927\u4e71\u4ea4 \u8868\u60c5\u51fa\u5356\u4e86\u5c11\u5973\u4eec\u6deb\u8361\u7684\u5185\u5fc3'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=7509/\u65e0\u5e95\u7ebf\u591a\u4eba\u5927\u4e71\u4ea4-\u8868\u60c5\u51fa\u5356\u4e86\u5c11\u5973\u4eec\u6deb\u8361\u7684\u5185\u5fc3&html5=1']}
+Fri, 05 May 2017 19:03:44 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=20477> (referer: http://www.1dav.com/class.php?cid=29&page=5)
+Fri, 05 May 2017 19:03:44 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=20477>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u6d59\u5927\u95f7\u9a9a\u773c\u955c\u59b9 \u4e30\u6ee1\u4e0d\u5931\u6e05\u79c0 \u517c\u804c\u88f8\u804a\u8d5a\u5916\u5757'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=7510/\u6d59\u5927\u95f7\u9a9a\u773c\u955c\u59b9-\u4e30\u6ee1\u4e0d\u5931\u6e05\u79c0-\u517c\u804c\u88f8\u804a\u8d5a\u5916\u5757&html5=1']}
+Fri, 05 May 2017 19:03:45 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=20474> (referer: http://www.1dav.com/class.php?cid=29&page=5)
+Fri, 05 May 2017 19:03:45 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=20474>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u5b66\u751f\u60c5\u4fa3\u51fa\u79df\u5c4b\u6253\u70ae\u76f4\u64ad \u8fd9\u59ff\u52bf\u65e0\u654c\u4e86\uff01'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=7511/\u5b66\u751f\u60c5\u4fa3\u51fa\u79df\u5c4b\u6253\u70ae\u76f4\u64ad-\u8fd9\u59ff\u52bf\u65e0\u654c\u4e86&html5=1']}
+Fri, 05 May 2017 19:03:45 logstats.py[line:48] INFO Crawled 146 pages (at 49 pages/min), scraped 124 items (at 49 items/min)
+Fri, 05 May 2017 19:03:46 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=20468> (referer: http://www.1dav.com/class.php?cid=29&page=5)
+Fri, 05 May 2017 19:03:46 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=20468>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u86c7\u7cbe\u8138\u5c0f\u7f8e\u5973 \u9762\u5bf9DV \u7f9e\u8fb1\u653e\u5c3f'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=7513/\u86c7\u7cbe\u8138\u5c0f\u7f8e\u5973-\u9762\u5bf9dv-\u7f9e\u8fb1\u653e\u5c3f&html5=1']}
+Fri, 05 May 2017 19:03:47 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=20466> (referer: http://www.1dav.com/class.php?cid=29&page=5)
+Fri, 05 May 2017 19:03:47 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=20466>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u9a6c\u5c3e\u8fab\u9aa8\u611f\u768418\u5c81\u5973\u5b69\u513f-\u6ce1\u6ce1\u6d74\u6027\u670d\u52a1'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=7514/\u9a6c\u5c3e\u8fab\u9aa8\u611f\u768418\u5c81\u5973\u5b69\u513f-\u6ce1\u6ce1\u6d74\u6027\u670d\u52a1&html5=1']}
+Fri, 05 May 2017 19:03:48 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=20461> (referer: http://www.1dav.com/class.php?cid=29&page=5)
+Fri, 05 May 2017 19:03:49 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=20461>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u5c9b\u56fd\u540d\u4f18\u957f\u8c37\u4f18\u91cc\u5948: \u8fdb\u51fb\u65e0\u6bdb\u5ae9\u7a74 \u5927\u91cf\u6f6e\u55b7'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=7515/\u5c9b\u56fd\u540d\u4f18\u957f\u8c37\u4f18\u91cc\u5948-\u8fdb\u51fb\u65e0\u6bdb\u5ae9\u7a74-\u5927\u91cf\u6f6e\u55b7&html5=1']}
+Fri, 05 May 2017 19:03:50 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=20455> (referer: http://www.1dav.com/class.php?cid=29&page=5)
+Fri, 05 May 2017 19:03:50 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=20455>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u4e00\u672c\u9053: \u4e0e\u5706\u5976\u80a5\u81c0\u7684\u5bb3\u7f9e\u5e74\u8f7b\u5c11\u5987\u7684\u5408\u4f53'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=7516/\u4e00\u672c\u9053-\u4e0e\u5706\u5976\u80a5\u81c0\u7684\u5bb3\u7f9e\u5e74\u8f7b\u5c11\u5987\u7684\u5408\u4f53&html5=1']}
+Fri, 05 May 2017 19:03:51 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=20485> (referer: http://www.1dav.com/class.php?cid=29&page=5)
+Fri, 05 May 2017 19:03:51 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=20485>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u6765"\u56e2\u8d2d"\u4e00\u573a\u53bb\u5c9b\u56fd\u7684\u6e29\u6cc9\u6027\u6d3e\u5bf9\u5427 '],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=7517/\u6765-\u56e2\u8d2d-\u4e00\u573a\u53bb\u5c9b\u56fd\u7684\u6e29\u6cc9\u6027\u6d3e\u5bf9\u5427&html5=1']}
+Fri, 05 May 2017 19:03:52 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=20478> (referer: http://www.1dav.com/class.php?cid=29&page=4)
+Fri, 05 May 2017 19:03:52 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=20478>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'175cm\u4fee\u957f\u8eab\u6750\u5c0f\u5ae9\u6a21 \u5feb\u70ae\u8fdb\u51fb\u4e0b\u4f53\u540e \u88ab\u989c\u5c04'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=7519/175cm\u4fee\u957f\u8eab\u6750\u5c0f\u5ae9\u6a21-\u5feb\u70ae\u8fdb\u51fb\u4e0b\u4f53\u540e-\u88ab\u989c\u5c04&html5=1']}
+Fri, 05 May 2017 19:03:53 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=20475> (referer: http://www.1dav.com/class.php?cid=29&page=4)
+Fri, 05 May 2017 19:03:53 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=20475>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'[\u65e0\u7801]AV\u5973\u7687\u6ce2\u591a\u91ce\u7ed3\u8863-50\u989c\u5c04 \u91cd\u6e29\u7ecf\u5178'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=7520/\u65e0\u7801-av\u5973\u7687\u6ce2\u591a\u91ce\u7ed3\u8863-50\u989c\u5c04-\u91cd\u6e29\u7ecf\u5178&html5=1']}
+Fri, 05 May 2017 19:03:55 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=20465> (referer: http://www.1dav.com/class.php?cid=29&page=4)
+Fri, 05 May 2017 19:03:55 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=20465>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u7f8e\u5973\u5728\u533b\u9662\u88ab2\u4e2a\u533b\u751f"\u68c0\u67e5\u4e0b\u4f53"\u540e\u8f6e\u5978 '],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=7523/\u7f8e\u5973\u5728\u533b\u9662\u88ab2\u4e2a\u533b\u751f-\u68c0\u67e5\u4e0b\u4f53-\u540e\u8f6e\u5978&html5=1']}
+Fri, 05 May 2017 19:03:56 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=20463> (referer: http://www.1dav.com/class.php?cid=29&page=4)
+Fri, 05 May 2017 19:03:56 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=20463>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'G\u7f69\u676f22\u5c81\u6027\u611f\u5c11\u5987 \u4eba\u7f8e\u6d3b\u597d \u53eb\u58f0\u5305\u5c04'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=7524/g\u7f69\u676f22\u5c81\u6027\u611f\u5c11\u5987-\u4eba\u7f8e\u6d3b\u597d-\u53eb\u58f0\u5305\u5c04&html5=1']}
+Fri, 05 May 2017 19:03:57 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=20462> (referer: http://www.1dav.com/class.php?cid=29&page=4)
+Fri, 05 May 2017 19:03:57 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=20462>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u7537\u751f\u4eec\u96c6\u4f53\u4eb5\u6e0e\u73ed\u82b1 \u628a\u5979\u73a9\u513f\u574f\u4e86\u4e3a\u6b62'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=7525/\u7537\u751f\u4eec\u96c6\u4f53\u4eb5\u6e0e\u73ed\u82b1-\u628a\u5979\u73a9\u513f\u574f\u4e86\u4e3a\u6b62&html5=1']}
+Fri, 05 May 2017 19:03:58 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=20482> (referer: http://www.1dav.com/class.php?cid=29&page=4)
+Fri, 05 May 2017 19:03:58 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=20482>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u4fc4\u7f57\u65af\u6821\u670d\u88c5\u5c0f\u841d\u8389 \u88ab\u4e9a\u6d32\u7537\u5728\u516c\u8f66\u786c\u4e0a'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=7528/\u4fc4\u7f57\u65af\u6821\u670d\u88c5\u5c0f\u841d\u8389-\u88ab\u4e9a\u6d32\u7537\u5728\u516c\u8f66\u786c\u4e0a&html5=1']}
+Fri, 05 May 2017 19:03:59 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=20456> (referer: http://www.1dav.com/class.php?cid=29&page=4)
+Fri, 05 May 2017 19:03:59 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=20456>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u9ad8\u7ea7\u5993\u5973 \u679c\u7136\u64cd\u8d77\u6765\u975e\u540c\u51e1\u60f3'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=7529/\u9ad8\u7ea7\u5993\u5973-\u679c\u7136\u64cd\u8d77\u6765\u975e\u540c\u51e1\u60f3&html5=1']}
+Fri, 05 May 2017 19:04:00 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=20486> (referer: http://www.1dav.com/class.php?cid=29&page=4)
+Fri, 05 May 2017 19:04:00 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=20486>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u201c\u5feb\u70b9\u8279\u6211\u201d \u6781\u54c1\u5927\u5976\u7f8e\u5973\u7528\u624b\u673a\u62cd\u6444 \u9732\u8138'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=7532/\u5feb\u70b9\u8279\u6211-\u6781\u54c1\u5927\u5976\u7f8e\u5973\u7528\u624b\u673a\u62cd\u6444-\u9732\u8138&html5=1']}
+Fri, 05 May 2017 19:04:01 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=20515> (referer: http://www.1dav.com/class.php?cid=29&page=4)
+Fri, 05 May 2017 19:04:02 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=20515>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u97e9\u56fd\u6c14\u8d28\u7a7a\u59d0\u5728\u5bb6\u91cc\u8fb9\u770bA\u7247\u8fb9\u6253\u70ae'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=7533/\u97e9\u56fd\u6c14\u8d28\u7a7a\u59d0\u5728\u5bb6\u91cc\u8fb9\u770ba\u7247\u8fb9\u6253\u70ae&html5=1']}
+Fri, 05 May 2017 19:04:03 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=20510> (referer: http://www.1dav.com/class.php?cid=29&page=3)
+Fri, 05 May 2017 19:04:03 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=20510>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u82b1\u4e86200\u5143\u641e\u4e86\u4e2a\u5feb\u9910\u723d\u4e86\u4e0b(\u4e0b)'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=7535/\u82b1\u4e86200\u5143\u641e\u4e86\u4e2a\u5feb\u9910\u723d\u4e86\u4e0b-\u4e0b&html5=1']}
+Fri, 05 May 2017 19:04:04 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=20507> (referer: http://www.1dav.com/class.php?cid=29&page=3)
+Fri, 05 May 2017 19:04:04 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=20507>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u9a9a\u5973\u4e58\u5ba2\u51fa\u79df\u8f66\u4e0a\u52fe\u5f15\u53f8\u673a\u4e0d\u4ed8\u8f66\u8d39\uff0c\u56fd\u8bed\u5bf9\u767d'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=7536/\u9a9a\u5973\u4e58\u5ba2\u51fa\u79df\u8f66\u4e0a\u52fe\u5f15\u53f8\u673a\u4e0d\u4ed8\u8f66\u8d39-\u56fd\u8bed\u5bf9\u767d&html5=1']}
+Fri, 05 May 2017 19:04:05 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=20504> (referer: http://www.1dav.com/class.php?cid=29&page=3)
+Fri, 05 May 2017 19:04:05 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=20504>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u56db\u7537\u4e24\u5973\u9152\u5e97\u624b\u6301\u6444\u8c61\u673a\u6deb\u4e71\u5b9e\u5f55'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=7537/\u56db\u7537\u4e24\u5973\u9152\u5e97\u624b\u6301\u6444\u8c61\u673a\u6deb\u4e71\u5b9e\u5f55&html5=1']}
+Fri, 05 May 2017 19:04:06 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=20501> (referer: http://www.1dav.com/class.php?cid=29&page=3)
+Fri, 05 May 2017 19:04:07 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=20501>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'36D\u5927\u5976\u5c11\u5987\u9732\u8138\u9a91\u5750 \u7136\u540e\u53e3\u4ea4\u6446\u51fa\u526a\u5200\u624b'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=7538/36d\u5927\u5976\u5c11\u5987\u9732\u8138\u9a91\u5750-\u7136\u540e\u53e3\u4ea4\u6446\u51fa\u526a\u5200\u624b&html5=1']}
+Fri, 05 May 2017 19:04:08 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=20497> (referer: http://www.1dav.com/class.php?cid=29&page=3)
+Fri, 05 May 2017 19:04:08 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=20497>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'3P\u5c11\u5987\u7cfb\u5217\u4e4b\u536b\u751f\u95f4\u95e8\u53e3\u7ad9\u70ae\u524d\u540e\u52a0\u653b'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=7539/3p\u5c11\u5987\u7cfb\u5217\u4e4b\u536b\u751f\u95f4\u95e8\u53e3\u7ad9\u70ae\u524d\u540e\u52a0\u653b&html5=1']}
+Fri, 05 May 2017 19:04:09 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=20494> (referer: http://www.1dav.com/class.php?cid=29&page=3)
+Fri, 05 May 2017 19:04:09 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=20494>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u5355\u4f4d\u5e72\u90e8\u9152\u5e97\u7ea6\u70ae36\u5c81\u719f\u5973\u4e0b\u5c5e\u9732\u8138'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=7540/\u5355\u4f4d\u5e72\u90e8\u9152\u5e97\u7ea6\u70ae36\u5c81\u719f\u5973\u4e0b\u5c5e\u9732\u8138&html5=1']}
+Fri, 05 May 2017 19:04:10 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=20492> (referer: http://www.1dav.com/class.php?cid=29&page=3)
+Fri, 05 May 2017 19:04:10 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=20492>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u8d85\u957f\u5b8c\u6574\u7248 \u9ed1\u4e1d\u5c0f\u5ae9\u6a21\u89c6\u9891\u81ea\u6170\u8868\u6f14'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=7541/\u8d85\u957f\u5b8c\u6574\u7248-\u9ed1\u4e1d\u5c0f\u5ae9\u6a21\u89c6\u9891\u81ea\u6170\u8868\u6f14&html5=1']}
+Fri, 05 May 2017 19:04:11 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=20489> (referer: http://www.1dav.com/class.php?cid=29&page=3)
+Fri, 05 May 2017 19:04:11 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=20489>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u5c0f\u60c5\u4fa3\u9152\u5e97\u7231\u7231\u9ad8\u6e05\u6444\u50cf\u8bb0\u5f55\u7559\u604b'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=7543/\u5c0f\u60c5\u4fa3\u9152\u5e97\u7231\u7231\u9ad8\u6e05\u6444\u50cf\u8bb0\u5f55\u7559\u604b&html5=1']}
+Fri, 05 May 2017 19:04:12 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=20516> (referer: http://www.1dav.com/class.php?cid=29&page=3)
+Fri, 05 May 2017 19:04:12 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=20516>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u82b1\u4e86200\u5143\u641e\u4e86\u4e2a\u5feb\u9910\u723d\u4e86\u4e0b (\u4e0a)'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=7546/\u82b1\u4e86200\u5143\u641e\u4e86\u4e2a\u5feb\u9910\u723d\u4e86\u4e0b-\u4e0a&html5=1']}
+Fri, 05 May 2017 19:04:13 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=20509> (referer: http://www.1dav.com/class.php?cid=29&page=2)
+Fri, 05 May 2017 19:04:13 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=20509>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u6821\u82b1\u7ea7\u7f8e\u5973\u8ddf\u7537\u53cb\u5f00\u653e\u81ea\u62cd \u5ea6\u8fc7\u5b8c\u7f8e\u5468\u672b'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=7550/\u6821\u82b1\u7ea7\u7f8e\u5973\u8ddf\u7537\u53cb\u5f00\u653e\u81ea\u62cd-\u5ea6\u8fc7\u5b8c\u7f8e\u5468\u672b&html5=1']}
+Fri, 05 May 2017 19:04:14 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=20506> (referer: http://www.1dav.com/class.php?cid=29&page=2)
+Fri, 05 May 2017 19:04:14 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=20506>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u771f\u5b9e\u5546\u573a\u5077\u62cd \u67d0\u9886\u5bfc\u548c\u60c5\u4eba\u8bd5\u8863\u95f4\u6253\u70ae'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=7551/\u771f\u5b9e\u5546\u573a\u5077\u62cd-\u67d0\u9886\u5bfc\u548c\u60c5\u4eba\u8bd5\u8863\u95f4\u6253\u70ae&html5=1']}
+Fri, 05 May 2017 19:04:15 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=20503> (referer: http://www.1dav.com/class.php?cid=29&page=2)
+Fri, 05 May 2017 19:04:15 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=20503>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u725b\u903c\u60c5\u4fa3\u8fb9\u5438\u6bd2\u8fb9\u505a\u7231\u5feb\u4e50\u5230\u6b7b'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=7552/\u725b\u903c\u60c5\u4fa3\u8fb9\u5438\u6bd2\u8fb9\u505a\u7231\u5feb\u4e50\u5230\u6b7b&html5=1']}
+Fri, 05 May 2017 19:04:16 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=20495> (referer: http://www.1dav.com/class.php?cid=29&page=2)
+Fri, 05 May 2017 19:04:16 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=20495>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u51fa\u95e8\u5728\u5916\u627e\u4e2a\u9e21\u6d88\u6d88\u706b'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=7555/\u51fa\u95e8\u5728\u5916\u627e\u4e2a\u9e21\u6d88\u6d88\u706b&html5=1']}
+Fri, 05 May 2017 19:04:17 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=20498> (referer: http://www.1dav.com/class.php?cid=29&page=2)
+Fri, 05 May 2017 19:04:18 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=20498>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u5fae\u4fe1\u7ea6\u7684\u4e00\u4e2a\u6253\u5de5\u59b9\u662f\u4e00\u4e2a\u95f7\u846b\u82a6\u5973\u4eba'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=7554/\u5fae\u4fe1\u7ea6\u7684\u4e00\u4e2a\u6253\u5de5\u59b9\u662f\u4e00\u4e2a\u95f7\u846b\u82a6\u5973\u4eba&html5=1']}
+Fri, 05 May 2017 19:04:19 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=20500> (referer: http://www.1dav.com/class.php?cid=29&page=2)
+Fri, 05 May 2017 19:04:19 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=20500>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u51fa\u79df\u5c4b\u64cd\u522b\u4eba\u7684\u8001\u5a46\u9732\u8138'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=7553/\u51fa\u79df\u5c4b\u64cd\u522b\u4eba\u7684\u8001\u5a46\u9732\u8138&html5=1']}
+Fri, 05 May 2017 19:04:20 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=20491> (referer: http://www.1dav.com/class.php?cid=29&page=2)
+Fri, 05 May 2017 19:04:20 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=20491>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u56fd\u5185\u5065\u7f8e\u64cd\u7f8e\u5973\u5927\u80c6XXOO\u56db\u90e8(4)'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=7547/\u56fd\u5185\u5065\u7f8e\u64cd\u7f8e\u5973\u5927\u80c6xxoo\u56db\u90e8-4&html5=1']}
+Fri, 05 May 2017 19:04:21 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=20488> (referer: http://www.1dav.com/class.php?cid=29&page=2)
+Fri, 05 May 2017 19:04:21 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=20488>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u56fd\u5185\u5065\u7f8e\u64cd\u7f8e\u5973\u5927\u80c6XXOO\u56db\u90e8(3)'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=7557/\u56fd\u5185\u5065\u7f8e\u64cd\u7f8e\u5973\u5927\u80c6xxoo\u56db\u90e8-3&html5=1']}
+Fri, 05 May 2017 19:04:23 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=20514> (referer: http://www.1dav.com/class.php?cid=29&page=2)
+Fri, 05 May 2017 19:04:23 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=20514>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u56fd\u5185\u5065\u7f8e\u64cd\u7f8e\u5973\u5927\u80c6XXOO\u56db\u90e8(2)'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=7544/\u56fd\u5185\u5065\u7f8e\u64cd\u7f8e\u5973\u5927\u80c6xxoo\u56db\u90e8-2&html5=1']}
+Fri, 05 May 2017 19:04:24 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=20508> (referer: http://www.1dav.com/class.php?cid=29&page=1)
+Fri, 05 May 2017 19:04:24 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=20508>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u534e\u88d4\u773c\u955c\u7f8e\u5973\u548c\u5916\u56fd\u7537\u53cb\u623f\u95f4\u7231\u7231(4)'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=7545/\u534e\u88d4\u773c\u955c\u7f8e\u5973\u548c\u5916\u56fd\u7537\u53cb\u623f\u95f4\u7231\u7231-4&html5=1']}
+Fri, 05 May 2017 19:04:24 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=20505> (referer: http://www.1dav.com/class.php?cid=29&page=1)
+Fri, 05 May 2017 19:04:25 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=20505>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u534e\u88d4\u773c\u955c\u7f8e\u5973\u548c\u5916\u56fd\u7537\u53cb\u623f\u95f4\u7231\u7231(3)'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=7542/\u534e\u88d4\u773c\u955c\u7f8e\u5973\u548c\u5916\u56fd\u7537\u53cb\u623f\u95f4\u7231\u7231-3&html5=1']}
+Fri, 05 May 2017 19:04:26 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=20502> (referer: http://www.1dav.com/class.php?cid=29&page=1)
+Fri, 05 May 2017 19:04:26 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=20502>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u534e\u88d4\u773c\u955c\u7f8e\u5973\u548c\u5916\u56fd\u7537\u53cb\u623f\u95f4\u7231\u7231(2)'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=7531/\u534e\u88d4\u773c\u955c\u7f8e\u5973\u548c\u5916\u56fd\u7537\u53cb\u623f\u95f4\u7231\u7231-2&html5=1']}
+Fri, 05 May 2017 19:04:27 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=20499> (referer: http://www.1dav.com/class.php?cid=29&page=1)
+Fri, 05 May 2017 19:04:27 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=20499>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u534e\u88d4\u773c\u955c\u7f8e\u5973\u548c\u5916\u56fd\u7537\u53cb\u623f\u95f4\u7231\u7231(1)'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=7548/\u534e\u88d4\u773c\u955c\u7f8e\u5973\u548c\u5916\u56fd\u7537\u53cb\u623f\u95f4\u7231\u7231-1&html5=1']}
+Fri, 05 May 2017 19:04:28 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=20496> (referer: http://www.1dav.com/class.php?cid=29&page=1)
+Fri, 05 May 2017 19:04:28 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=20496>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'3D\u52a8\u6f2b: \u76d1\u72f1\u5973\u5b50\u88ab\u91ce\u517d\u4e00\u822c\u7684\u7537\u4eba3P\u5f3a\u5978'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=7585/3d\u52a8\u6f2b-\u76d1\u72f1\u5973\u5b50\u88ab\u91ce\u517d\u4e00\u822c\u7684\u7537\u4eba3p\u5f3a\u5978&html5=1']}
+Fri, 05 May 2017 19:04:29 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=20493> (referer: http://www.1dav.com/class.php?cid=29&page=1)
+Fri, 05 May 2017 19:04:29 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=20493>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u6346\u7ed1\u5f3a\u5978\u4eba\u59bb \u5927\u91cf\u5185\u5c04'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=7586/\u6346\u7ed1\u5f3a\u5978\u4eba\u59bb-\u5927\u91cf\u5185\u5c04&html5=1']}
+Fri, 05 May 2017 19:04:31 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=20490> (referer: http://www.1dav.com/class.php?cid=29&page=1)
+Fri, 05 May 2017 19:04:31 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=20490>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u77f3\u5bb6\u5e84\u8fde\u4f53\u4e1d\u889c\u5c11\u5987 \u548c\u60c5\u4eba\u5bb6\u4e2d\u5077\u60c5'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=7587/\u77f3\u5bb6\u5e84\u8fde\u4f53\u4e1d\u889c\u5c11\u5987-\u548c\u60c5\u4eba\u5bb6\u4e2d\u5077\u60c5&html5=1']}
+Fri, 05 May 2017 19:04:32 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=20487> (referer: http://www.1dav.com/class.php?cid=29&page=1)
+Fri, 05 May 2017 19:04:32 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=20487>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u704c\u80a0\u540e\u7684\u809b\u95e8\u5feb\u611f\u52a0\u4e0a\u624b\u6307\u523a\u6fc0 \u8ba9\u5c11\u5973\u5927\u91cf\u6f6e\u55b7'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=7588/\u704c\u80a0\u540e\u7684\u809b\u95e8\u5feb\u611f\u52a0\u4e0a\u624b\u6307\u523a\u6fc0-\u8ba9\u5c11\u5973\u5927\u91cf\u6f6e\u55b7&html5=1']}
+Fri, 05 May 2017 19:04:33 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=46236> (referer: http://www.1dav.com/class.php?cid=29&page=1)
+Fri, 05 May 2017 19:04:33 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=46236>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u6027\u6025\u7684\u5973\u53cb\u76f4\u63a5\u6252\u5f00\u9ed1\u8272\u857e\u4e1d\u5185\u88e4\u5c31\u5750\u5728\u4e86JJ\u4e0a'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=8301/\u6027\u6025\u7684\u5973\u53cb\u76f4\u63a5\u6252\u5f00\u9ed1\u8272\u857e\u4e1d\u5185\u88e4\u5c31\u5750\u5728\u4e86jj\u4e0a&html5=1']}
+Fri, 05 May 2017 19:04:34 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=60641> (referer: http://www.1dav.com/class.php?cid=79&page=5)
+Fri, 05 May 2017 19:04:34 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=60641>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Big tit Asian beauty cums at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=big-tit-asian-beauty-cums-13224471&html5=1']}
+Fri, 05 May 2017 19:04:35 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=60642> (referer: http://www.1dav.com/class.php?cid=79&page=5)
+Fri, 05 May 2017 19:04:35 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=60642>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Using your boobs at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=using-your-boobs-34087671&html5=1']}
+Fri, 05 May 2017 19:04:36 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=60643> (referer: http://www.1dav.com/class.php?cid=79&page=5)
+Fri, 05 May 2017 19:04:36 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=60643>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Cummed on in public at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=cummed-on-in-public-13304271&html5=1']}
+Fri, 05 May 2017 19:04:37 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=60644> (referer: http://www.1dav.com/class.php?cid=79&page=5)
+Fri, 05 May 2017 19:04:37 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=60644>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Show me your skills at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=show-me-your-skills-34085241&html5=1']}
+Fri, 05 May 2017 19:04:38 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=60645> (referer: http://www.1dav.com/class.php?cid=79&page=5)
+Fri, 05 May 2017 19:04:38 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=60645>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'young babe fuck by a good cock at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=young-babe-fuck-by-a-good-cock-12542461&html5=1']}
+Fri, 05 May 2017 19:04:39 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=60646> (referer: http://www.1dav.com/class.php?cid=79&page=5)
+Fri, 05 May 2017 19:04:39 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=60646>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Tight pussy drilled at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=tight-pussy-drilled-34075331&html5=1']}
+Fri, 05 May 2017 19:04:40 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=52040> (referer: http://www.1dav.com/class.php?cid=79&page=5)
+Fri, 05 May 2017 19:04:40 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=52040>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Beautiful and busty brunette humps that fat erect cocker at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=beautiful-and-busty-brunette-humps-that-fat-erect-cocker-33461821&html5=1']}
+Fri, 05 May 2017 19:04:42 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=60649> (referer: http://www.1dav.com/class.php?cid=79&page=5)
+Fri, 05 May 2017 19:04:42 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=60649>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Jamie Misaki at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=jamie-misaki-34056931&html5=1']}
+Fri, 05 May 2017 19:04:43 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=60650> (referer: http://www.1dav.com/class.php?cid=79&page=5)
+Fri, 05 May 2017 19:04:43 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=60650>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Lots of vibrators on her at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=lots-of-vibrators-on-her-33409621&html5=1']}
+Fri, 05 May 2017 19:04:44 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=53320> (referer: http://www.1dav.com/class.php?cid=79&page=4)
+Fri, 05 May 2017 19:04:45 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=53320>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Jap porn star super cute at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=jap-porn-star-super-cute-33403001&html5=1']}
+Fri, 05 May 2017 19:04:45 logstats.py[line:48] INFO Crawled 197 pages (at 51 pages/min), scraped 175 items (at 51 items/min)
+Fri, 05 May 2017 19:04:46 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=59206> (referer: http://www.1dav.com/class.php?cid=79&page=4)
+Fri, 05 May 2017 19:04:46 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=59206>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Pee Solo 17 at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=pee-solo-17-33901581&html5=1']}
+Fri, 05 May 2017 19:04:47 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=60656> (referer: http://www.1dav.com/class.php?cid=79&page=4)
+Fri, 05 May 2017 19:04:47 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=60656>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'She squirts all over the bed sheet  at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=she-squirts-all-over-the-bed-sheet--33386411&html5=1']}
+Fri, 05 May 2017 19:04:48 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=54653> (referer: http://www.1dav.com/class.php?cid=79&page=4)
+Fri, 05 May 2017 19:04:48 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=54653>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'she like suck and cum at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=she-like-suck-and-cum-33861921&html5=1']}
+Fri, 05 May 2017 19:04:49 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=21623> (referer: http://www.1dav.com/class.php?cid=79&page=4)
+Fri, 05 May 2017 19:04:49 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=21623>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Haruna Ayase sucks the dong after is fucked at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=haruna-ayase-sucks-the-dong-after-is-fucked-33348191&html5=1']}
+Fri, 05 May 2017 19:04:50 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=52087> (referer: http://www.1dav.com/class.php?cid=79&page=4)
+Fri, 05 May 2017 19:04:51 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=52087>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'SUZUHARA EMIRI  at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=suzuhara-emiri--33232351&html5=1']}
+Fri, 05 May 2017 19:04:52 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=54655> (referer: http://www.1dav.com/class.php?cid=79&page=4)
+Fri, 05 May 2017 19:04:52 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=54655>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'HITOMI TACHIBANA at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=hitomi-tachibana-33861361&html5=1']}
+Fri, 05 May 2017 19:04:53 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=54660> (referer: http://www.1dav.com/class.php?cid=79&page=4)
+Fri, 05 May 2017 19:04:53 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=54660>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Perverted japs in all sorts of sex action at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=perverted-japs-in-all-sorts-of-sex-action-33860751&html5=1']}
+Fri, 05 May 2017 19:04:54 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=21626> (referer: http://www.1dav.com/class.php?cid=79&page=4)
+Fri, 05 May 2017 19:04:54 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=21626>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Group of nasty sluts getting fucked in an orgy at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=group-of-nasty-sluts-getting-fucked-in-an-orgy-33228851&html5=1']}
+Fri, 05 May 2017 19:04:56 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=60665> (referer: http://www.1dav.com/class.php?cid=79&page=3)
+Fri, 05 May 2017 19:04:56 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=60665>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Sarasa Hara Pantyhose Fetish Ultimate Erotics at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=sarasa-hara-pantyhose-fetish-ultimate-erotics-33007191&html5=1']}
+Fri, 05 May 2017 19:04:57 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=53529> (referer: http://www.1dav.com/class.php?cid=79&page=3)
+Fri, 05 May 2017 19:04:57 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=53529>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Jap whore in stockings at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=jap-whore-in-stockings-33736111&html5=1']}
+Fri, 05 May 2017 19:04:58 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=60668> (referer: http://www.1dav.com/class.php?cid=79&page=3)
+Fri, 05 May 2017 19:04:58 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=60668>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Anal dildo at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=anal-dildo-33004111&html5=1']}
+Fri, 05 May 2017 19:04:59 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=21604> (referer: http://www.1dav.com/class.php?cid=79&page=3)
+Fri, 05 May 2017 19:05:00 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=21604>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Bunny bitch getting fucked hard by her man at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=bunny-bitch-getting-fucked-hard-by-her-man-33641191&html5=1']}
+Fri, 05 May 2017 19:05:01 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=60673> (referer: http://www.1dav.com/class.php?cid=79&page=3)
+Fri, 05 May 2017 19:05:01 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=60673>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'anri okita  constricted petticoat obsession at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=anri-okita--constricted-petticoat-obsession-32758591&html5=1']}
+Fri, 05 May 2017 19:05:02 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=60677> (referer: http://www.1dav.com/class.php?cid=79&page=3)
+Fri, 05 May 2017 19:05:02 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=60677>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Kamikaze Girls Vol. 5 Yumi Oosako at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=kamikaze-girls-vol.-5-yumi-oosako-32734181&html5=1']}
+Fri, 05 May 2017 19:05:03 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=60679> (referer: http://www.1dav.com/class.php?cid=79&page=3)
+Fri, 05 May 2017 19:05:03 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=60679>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'4 busty jap chick boobjob 1 cock at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=4-busty-jap-chick-boobjob-1-cock-17730171&html5=1']}
+Fri, 05 May 2017 19:05:04 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=60325> (referer: http://www.1dav.com/class.php?cid=79&page=3)
+Fri, 05 May 2017 19:05:04 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=60325>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'dp fun on beach at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=dp-fun-on-beach-8675471&html5=1']}
+Fri, 05 May 2017 19:05:06 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=60682> (referer: http://www.1dav.com/class.php?cid=79&page=3)
+Fri, 05 May 2017 19:05:06 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=60682>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Hanekawa Tsubasa Uncen JAV at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=hanekawa-tsubasa-uncen-jav-32724171&html5=1']}
+Fri, 05 May 2017 19:05:07 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=12136> (referer: http://www.1dav.com/class.php?cid=79&page=2)
+Fri, 05 May 2017 19:05:07 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=12136>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Asian whore eats his ass and sucks his donger at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=asian-whore-eats-his-ass-and-sucks-his-donger-32649991&html5=1']}
+Fri, 05 May 2017 19:05:08 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=60326> (referer: http://www.1dav.com/class.php?cid=79&page=2)
+Fri, 05 May 2017 19:05:08 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=60326>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Japanese mega group sex Atsuko Watari Aika Saeki at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=japanese-mega-group-sex-atsuko-watari-aika-saeki-22892711&html5=1']}
+Fri, 05 May 2017 19:05:09 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=60686> (referer: http://www.1dav.com/class.php?cid=79&page=2)
+Fri, 05 May 2017 19:05:09 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=60686>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'She set up a spy cam at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=she-set-up-a-spy-cam-15850371&html5=1']}
+Fri, 05 May 2017 19:05:11 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=50617> (referer: http://www.1dav.com/class.php?cid=79&page=2)
+Fri, 05 May 2017 19:05:11 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=50617>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Young and horny at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=young-and-horny-32587571&html5=1']}
+Fri, 05 May 2017 19:05:12 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=60327> (referer: http://www.1dav.com/class.php?cid=79&page=2)
+Fri, 05 May 2017 19:05:12 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=60327>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'She is so wet at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=she-is-so-wet-30097171&html5=1']}
+Fri, 05 May 2017 19:05:13 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=60687> (referer: http://www.1dav.com/class.php?cid=79&page=2)
+Fri, 05 May 2017 19:05:13 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=60687>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'hot jap lady Akemi at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=hot-jap-lady-akemi-8932981&html5=1']}
+Fri, 05 May 2017 19:05:15 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=48144> (referer: http://www.1dav.com/class.php?cid=79&page=2)
+Fri, 05 May 2017 19:05:15 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=48144>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Asian bitch sucking off the dude on the bench at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=asian-bitch-sucking-off-the-dude-on-the-bench-32552481&html5=1']}
+Fri, 05 May 2017 19:05:15 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=60328> (referer: http://www.1dav.com/class.php?cid=79&page=2)
+Fri, 05 May 2017 19:05:16 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=60328>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'jap teen sex toy fun at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=jap-teen-sex-toy-fun-10666901&html5=1']}
+Fri, 05 May 2017 19:05:17 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=60689> (referer: http://www.1dav.com/class.php?cid=79&page=2)
+Fri, 05 May 2017 19:05:17 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=60689>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'pussy licking in store at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=pussy-licking-in-store-8850661&html5=1']}
+Fri, 05 May 2017 19:05:18 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=60692> (referer: http://www.1dav.com/class.php?cid=79&page=1)
+Fri, 05 May 2017 19:05:18 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=60692>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'licking her ass at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=licking-her-ass-8700591&html5=1']}
+Fri, 05 May 2017 19:05:19 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=47035> (referer: http://www.1dav.com/class.php?cid=79&page=1)
+Fri, 05 May 2017 19:05:20 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=47035>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Group sex outdoor at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=group-sex-outdoor-32232781&html5=1']}
+Fri, 05 May 2017 19:05:21 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=60695> (referer: http://www.1dav.com/class.php?cid=79&page=1)
+Fri, 05 May 2017 19:05:21 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=60695>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'sexy Akemi boobjob casting at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=sexy-akemi-boobjob-casting-8686361&html5=1']}
+Fri, 05 May 2017 19:05:22 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=12234> (referer: http://www.1dav.com/class.php?cid=79&page=1)
+Fri, 05 May 2017 19:05:22 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=12234>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Breath taking Asian babe in the shower rubbing on her twat at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=breath-taking-asian-babe-in-the-shower-rubbing-on-her-twat-32226251&html5=1']}
+Fri, 05 May 2017 19:05:23 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=60698> (referer: http://www.1dav.com/class.php?cid=79&page=1)
+Fri, 05 May 2017 19:05:23 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=60698>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'stocking hot babe butt fucking at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=stocking-hot-babe-butt-fucking-8672411&html5=1']}
+Fri, 05 May 2017 19:05:24 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=60701> (referer: http://www.1dav.com/class.php?cid=79&page=1)
+Fri, 05 May 2017 19:05:24 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=60701>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Wearing her sunglasses in bed at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=wearing-her-sunglasses-in-bed-32100241&html5=1']}
+Fri, 05 May 2017 19:05:25 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=60291> (referer: http://www.1dav.com/class.php?cid=79&page=1)
+Fri, 05 May 2017 19:05:25 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=60291>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Takako Kitahara at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=takako-kitahara-8651541&html5=1']}
+Fri, 05 May 2017 19:05:27 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=60704> (referer: http://www.1dav.com/class.php?cid=79&page=1)
+Fri, 05 May 2017 19:05:27 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=60704>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Chick in purple stockings drinking cum at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=chick-in-purple-stockings-drinking-cum-30283941&html5=1']}
+Fri, 05 May 2017 19:05:28 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=60705> (referer: http://www.1dav.com/class.php?cid=79&page=1)
+Fri, 05 May 2017 19:05:28 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=60705>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Censored unique gangbang from japanese at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=censored-unique-gangbang-from-japanese-15741921&html5=1']}
+Fri, 05 May 2017 19:05:29 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/class.php?cid=115&page=12> (referer: None)
+Fri, 05 May 2017 19:05:30 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/class.php?cid=115&page=13> (referer: None)
+Fri, 05 May 2017 19:05:31 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/class.php?cid=115&page=14> (referer: None)
+Fri, 05 May 2017 19:05:32 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/class.php?cid=115&page=15> (referer: None)
+Fri, 05 May 2017 19:05:33 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71024> (referer: http://www.1dav.com/class.php?cid=115&page=12)
+Fri, 05 May 2017 19:05:34 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71024>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'brunette hottie fuck by black at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=brunette-hottie-fuck-by-black-36595691&html5=1']}
+Fri, 05 May 2017 19:05:35 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71035> (referer: http://www.1dav.com/class.php?cid=115&page=12)
+Fri, 05 May 2017 19:05:35 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71035>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u' AVA DEVINE IS THE PROPER SLUT at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=ava-devine-is-the-proper-slut-37963951&html5=1']}
+Fri, 05 May 2017 19:05:36 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=60836> (referer: http://www.1dav.com/class.php?cid=115&page=12)
+Fri, 05 May 2017 19:05:36 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=60836>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u6709\u591f\u6fc0\u52a8\u5e8a\u90fd\u6643\u7684\u5431\u560e\u7684\u54cd'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=9716/\u6709\u591f\u6fc0\u52a8\u5e8a\u90fd\u6643\u7684\u5431\u560e\u7684\u54cd&html5=1']}
+Fri, 05 May 2017 19:05:37 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=59605> (referer: http://www.1dav.com/class.php?cid=115&page=12)
+Fri, 05 May 2017 19:05:37 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=59605>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u6781\u54c1\u9aa8\u611f\u827a\u672f\u9662\u6821\u8d85\u7ea7\u5c0f\u7f8e\u5973\u88ab\u5e72\u7239\u5728\u8c6a\u5b85\u7206\u63d2'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=9696/\u6781\u54c1\u9aa8\u611f\u827a\u672f\u9662\u6821\u8d85\u7ea7\u5c0f\u7f8e\u5973\u88ab\u5e72\u7239\u5728\u8c6a\u5b85\u7206\u63d2&html5=1']}
+Fri, 05 May 2017 19:05:38 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71076> (referer: http://www.1dav.com/class.php?cid=115&page=12)
+Fri, 05 May 2017 19:05:38 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71076>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Big Boob Anime Blonde Babe Twat Finger and Dick Harden Action'],
+ 'videolink': [u'http://203.75.190.21/readg/7av.php?id=big-boob-anime-blonde-babe-twat-finger-and-dick-harden-action-zcPmiTlHFZ1&html5=1']}
+Fri, 05 May 2017 19:05:39 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=59581> (referer: http://www.1dav.com/class.php?cid=115&page=12)
+Fri, 05 May 2017 19:05:39 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=59581>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'\u6027\u798f\u75f4\u7537: \u540c\u65f6\u548c5\u4e2a\u6821\u82b1\u7ea7\u9752\u6625\u671f\u7f8e\u5c11\u5973ooxx'],
+ 'videolink': [u'http://www.1dav.com/api/read/zd.php?id=9686/\u6027\u798f\u75f4\u7537-\u540c\u65f6\u548c5\u4e2a\u6821\u82b1\u7ea7\u9752\u6625\u671f\u7f8e\u5c11\u5973ooxx&html5=1']}
+Fri, 05 May 2017 19:05:41 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71083> (referer: http://www.1dav.com/class.php?cid=115&page=12)
+Fri, 05 May 2017 19:05:41 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71083>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Red Head Anime Babe Naked Deep Throat Action on Floor'],
+ 'videolink': [u'http://203.75.190.21/readg/7av.php?id=red-head-anime-babe-naked-deep-throat-action-on-floor-nJy1fg3TJWL&html5=1']}
+Fri, 05 May 2017 19:05:42 engine.py[line:240] DEBUG Crawled (200) <GET http://www.1dav.com/read.php?vid=71097> (referer: http://www.1dav.com/class.php?cid=115&page=12)
+Fri, 05 May 2017 19:05:42 scraper.py[line:237] DEBUG Scraped from <200 http://www.1dav.com/read.php?vid=71097>
+{'playcount': '0',
+ 'tags': ' - ',
+ 'title': [u'Pounding hard in car at Youjizz Mobile'],
+ 'videolink': [u'http://203.75.190.21/readb/play.php?id=pounding-hard-in-car-40198401&html5=1']}
